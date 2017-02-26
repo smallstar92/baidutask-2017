@@ -1,0 +1,355 @@
+/*Style initialization*/
+body{margin:0;padding:0;background:#400040;} 
+a{color:#2d374b;text-decoration:none} 
+a:hover{color:#cd0200;} 
+img{border:0;} 
+
+/*1.header*/
+header{
+	position:fixed;
+	width:100%;
+	height:50px;
+	margin:0;
+	padding:0;
+	background:#DEDEDE;
+	z-index:3;
+}
+/*1-1.header logo*/
+h1{
+	width:300px;
+	margin:0;
+	padding:0;
+}
+h1>a{
+    line-height:50px;
+    font:16px "楷体","Arial Narrow",HELVETICA;
+}
+/*1-2.header navigation*/
+ul{
+	position:absolute;
+	margin:0;
+	padding:0;
+	top:0;
+	right:5px;
+}
+li{
+	float:left;
+	height:50px;
+    margin-right:20px;
+	font:14px "黑体","Arial Narrow",HELVETICA;
+}
+li>a{
+	display:block;
+	line-height:50px;
+}
+li>a:hover{
+	background:#918887;
+}
+
+/*2.article...*/
+/*2-1.基础样式*/
+article{
+	float:left;
+	width:100%;
+	height:500px;
+}
+figure{
+	position:relative;
+	width:400px;
+	height:180px;
+	margin:0 0 0 50%;
+	top:160px;
+	left:-200px;
+	box-sizing:border-box;
+	background:url(../img/button-bg.jpg);
+	border-radius:5px;
+}
+figure>div{
+    position:relative;
+	width:320px;
+	height:120px;
+	top:30px;
+	left:40px;
+    box-sizing:border-box;
+}
+div>div{
+    position:relative;
+	width:320px;
+	height:120px;
+}
+div>a{
+	display:block;
+	position: relative;
+	text-align:center;
+	line-height:120px;
+}
+/*2-2.文字流光渐变*/
+div>a{
+	-webkit-background-clip:text;
+	-webkit-text-fill-color:transparent;
+	background-image:-webkit-linear-gradient(left,yellow,green 25%,yellow 50%,green 75%,yellow 100%);
+	background-size:200% 100%;	
+}
+@keyframes gradient{
+    from{background-position:0% 0%;}
+    to{background-position:-100% 0%;}
+}
+figure:hover a{ 
+	animation:gradient 3s linear infinite; 
+}
+/*2-3.文字移动和淡入淡出*/
+div>a{
+	top:14px;
+	opacity:0;
+    transition:opacity 0.3s linear,top 0.3s linear; 
+}
+figure:hover a{
+    top:0;
+	opacity:1;
+    transition:opacity 0.3s linear,top 0.3s linear;  
+}
+/*2-4.毛玻璃效果*/
+figure::before{
+	content:'';
+	position:absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	background:url(../img/button-bg.jpg);
+	border-radius:5px;
+	-webkit-transition:filter 0.3s linear;
+	transition:filter 0.3s linear;
+}
+figure:hover::before{
+	filter:blur(5px);
+	transition:filter 0.3s linear;
+}
+/*2-5.边框效果*/
+/*2-5-1.使用scale3d实现边框扩展*/
+/*2-5-1-1.构建伪元素*/
+#left-right1::before,
+#left-right1::after,
+#top-bottom1::before,
+#top-bottom1::after{
+    content:'';
+    position:absolute;
+    background:#ffffff;
+    -webkit-transition:-webkit-transform 0.3s;
+    transition:transform 0.3s;
+    -webkit-transition-timing-function:cubic-bezier(0.44, 0.05, 0.55, 0.95);
+    transition-timing-function:cubic-bezier(0.44, 0.05, 0.55, 0.95);/*贝塞尔曲线*/
+}
+/*2-5-1-2.左右边框构建*/
+#left-right1::before,
+#left-right1::after{
+	width:2px;
+	height:100%;
+	top:0;
+	-webkit-transform: scale3d(0.1, 0, 1);
+	transform: scale3d(0.1, 0, 1);
+}
+#left-right1::before{
+	left:0;
+}
+#left-right1::after{
+	right:0;
+}
+/*2-5-1-3.上下边框构建*/
+#top-bottom1::before,
+#top-bottom1::after{
+	width:100%;
+	height:2px;
+	left:0;
+	-webkit-transform: scale3d(0, 0.1, 1);
+	transform: scale3d(0, 0.1, 1);
+}
+#top-bottom1::before{
+	top:0;
+}
+#top-bottom1::after{
+	bottom:0;
+}
+/*2-5-1-4.使用伪类*/
+figure:hover #left-right1::before,
+figure:hover #left-right1::after,
+figure:hover #top-bottom1::before,
+figure:hover #top-bottom1::after{
+	-webkit-transform: scale3d(1, 1, 1);
+	transform: scale3d(1, 1, 1);
+}
+/*2-5-2.使用伪元素height/top、width/left实现边框扩展*/
+#top-bottom2::before,
+#top-bottom2::after{
+	content:'';
+    position:absolute;
+    box-sizing:border-box;
+}
+#top-bottom2::before{
+    width:100%;
+    height:0;
+    top:50%;
+    border-left:2px solid #fff;
+    border-right:2px solid #fff;
+    -webkit-transition:height 0.3s linear,top 0.3s linear;
+    transition:height 0.3s linear,top 0.3s linear;
+}
+article figure:hover #top-bottom2::before{
+	height:100%;
+	top:0;
+}
+#top-bottom2::after{
+    width:0;
+    height:100%;
+	top:0;
+    left:50%;
+    border-top:2px solid #fff;
+    border-bottom:2px solid #fff;
+    -webkit-transition:width 0.3s linear,left 0.3s linear;
+    transition:width 0.3s linear,left 0.3s linear;
+}
+article figure:hover #top-bottom2::after{
+	width:100%;
+	left:0;
+}
+/*2-5-3.自设边框效果，使用transition-delay属性*/
+/*2-5-3-1.构建伪元素*/
+#left-right3::before,
+#left-right3::after,
+#top-bottom3::before,
+#top-bottom3::after{
+    content:'';
+    position:absolute;
+    background:#ffffff;
+}
+/*2-5-3-2.左边框效果*/
+#left-right3::before{
+	width:2px;
+	height:0;
+	top:-200%;
+	left:0;
+    -webkit-transition:top 0.2s linear 0.1s,height 0.2s linear 0.1s;
+    transition:top 0.2s linear 0.1s,height 0.2s linear 0.1s;
+}
+article figure:hover #left-right3::before{
+    height:100%;
+    top:0;
+    -webkit-transition:top 0.2s linear,height 0.2s linear;
+    transition:top 0.2s linear,height 0.2s linear;
+}
+/*2-5-3-3.上边框效果*/
+#top-bottom3::before{
+	width:0;
+	height:2px;
+	top:0;
+	left:0;
+    -webkit-transition:width 0.1s linear 0.1s;
+    transition:width 0.1s linear 0.1s;
+}
+article figure:hover #top-bottom3::before{
+    width:100%;
+}
+/*2-5-3-4.右边框效果*/
+#left-right3::after{
+	width:2px;
+	height:0;
+	top:0;
+	right:0;
+	-webkit-transition:height 0.1s linear;
+    transition:height 0.1s linear;
+}
+article figure:hover #left-right3::after{
+	height:100%;
+	-webkit-transition:height 0.1s linear 0.2s;
+    transition:height 0.1s linear 0.2s;
+}
+/*2-5-3-5.下边框效果*/
+#top-bottom3::after{
+	width:0;
+	height:2px;
+	left:0;
+	bottom:0;
+	-webkit-transition:width 0.1s linear;
+    transition:width 0.1s linear;
+}
+article figure:hover #top-bottom3::after{
+	width:100%;
+	-webkit-transition:width 0.1s linear 0.2s;
+    transition:width 0.1s linear 0.2s;
+}
+/*2-5-4.自设边框效果,使用transform(rotate/scale3d)、transform-origin*/
+/*2-5-4-1.构建伪元素*/
+#left-right4::before,
+#left-right4::after,
+#top-bottom4::before,
+#top-bottom4::after{
+    content:'';
+    position:absolute;
+    background:#ffffff;
+    -webkit-transition:all 0.3s;
+    transition:all 0.3s;
+    -webkit-transition-timing-function:cubic-bezier(0.44, 0.05, 0.55, 0.95);
+    transition-timing-function:cubic-bezier(0.44, 0.05, 0.55, 0.95);/*贝塞尔曲线*/
+}
+/*2-5-4-2.构建左右边框*/
+#left-right4::before,
+#left-right4::after{
+	width:2px;
+	height:100%;
+	top:0;
+	-webkit-transform:rotate(-30deg) scale3d(0.1, 0, 1);
+	transform:rotate(-30deg) scale3d(0.1, 0, 1);
+}
+#left-right4::before{
+	left:0;
+	-webkit-transform-origin:50% 100%;
+	transform-origin:50% 100%;/*以下端为原点*/
+}
+#left-right4::after{
+	right:0;
+	-webkit-transform-origin:50% 0%;
+	transform-origin:50% 0%;/*以上端为原点*/
+}
+/*2-5-4-3.构建左右边框*/
+#top-bottom4::before,
+#top-bottom4::after{
+	width:100%;
+	height:2px;
+	left:0;
+	-webkit-transform:rotate(-30deg) scale3d(0, 0.1, 1);
+	transform:rotate(-30deg) scale3d(0, 0.1, 1);
+}
+#top-bottom4::before{
+	top:0;
+	-webkit-transform-origin:0% 50%;
+	transform-origin:0% 50%;
+}
+#top-bottom4::after{
+	bottom:0;
+	-webkit-transform-origin:100% 50%;
+	transform-origin:100% 50%;
+}
+/*2-5-4-4.使用伪类*/
+article figure:hover #left-right4::before,
+article figure:hover #left-right4::after,
+article figure:hover #top-bottom4::before,
+article figure:hover #top-bottom4::after{
+	-webkit-transform:rotate(0deg) scale3d(1, 1, 1);
+	transform:rotate(0deg) scale3d(1, 1, 1);
+}
+
+/*4.footer*/
+footer{
+	clear:both;
+	width:100%;
+	height:50px;
+	margin:0;
+	padding:0;
+	background:#DEDEDE;
+}
+footer p{
+	margin:0;
+	padding:0;
+    text-align:center;
+    line-height:50px;
+}
