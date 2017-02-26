@@ -21,8 +21,8 @@ h1{
 	padding:0;
 }
 h1>a{
-    line-height:50px;
-    font:16px "楷体","Arial Narrow",HELVETICA;
+	line-height:50px;
+	font:16px "楷体","Arial Narrow",HELVETICA;
 }
 /*1-2.header navigation*/
 ul{
@@ -35,7 +35,7 @@ ul{
 li{
 	float:left;
 	height:50px;
-    margin-right:20px;
+	margin-right:20px;
 	font:14px "黑体","Arial Narrow",HELVETICA;
 }
 li>a{
@@ -65,15 +65,15 @@ figure{
 	border-radius:5px;
 }
 figure>div{
-    position:relative;
+	position:relative;
 	width:320px;
 	height:120px;
 	top:30px;
 	left:40px;
-    box-sizing:border-box;
+	box-sizing:border-box;
 }
 div>div{
-    position:relative;
+	position:relative;
 	width:320px;
 	height:120px;
 }
@@ -91,8 +91,8 @@ div>a{
 	background-size:200% 100%;	
 }
 @keyframes gradient{
-    from{background-position:0% 0%;}
-    to{background-position:-100% 0%;}
+	from{background-position:0% 0%;}
+	to{background-position:-100% 0%;}
 }
 figure:hover a{ 
 	animation:gradient 3s linear infinite; 
@@ -101,12 +101,11 @@ figure:hover a{
 div>a{
 	top:14px;
 	opacity:0;
-    transition:opacity 0.3s linear,top 0.3s linear; 
+	transition:opacity 0.3s linear,top 0.3s linear; 
 }
 figure:hover a{
-    top:0;
-	opacity:1;
-    transition:opacity 0.3s linear,top 0.3s linear;  
+	top:0;
+	opacity:1;  
 }
 /*2-4.毛玻璃效果*/
 figure::before{
@@ -132,13 +131,13 @@ figure:hover::before{
 #left-right1::after,
 #top-bottom1::before,
 #top-bottom1::after{
-    content:'';
-    position:absolute;
-    background:#ffffff;
-    -webkit-transition:-webkit-transform 0.3s;
-    transition:transform 0.3s;
-    -webkit-transition-timing-function:cubic-bezier(0.44, 0.05, 0.55, 0.95);
-    transition-timing-function:cubic-bezier(0.44, 0.05, 0.55, 0.95);/*贝塞尔曲线*/
+	content:'';
+	position:absolute;
+	background:#ffffff;
+	-webkit-transition:-webkit-transform 0.3s;
+	transition:transform 0.3s;
+	-webkit-transition-timing-function:cubic-bezier(0.44, 0.05, 0.55, 0.95);
+	transition-timing-function:cubic-bezier(0.44, 0.05, 0.55, 0.95);/*贝塞尔曲线*/
 }
 /*2-5-1-2.左右边框构建*/
 #left-right1::before,
@@ -182,31 +181,31 @@ figure:hover #top-bottom1::after{
 #top-bottom2::before,
 #top-bottom2::after{
 	content:'';
-    position:absolute;
-    box-sizing:border-box;
+	position:absolute;
+	box-sizing:border-box;
 }
 #top-bottom2::before{
-    width:100%;
-    height:0;
-    top:50%;
-    border-left:2px solid #fff;
-    border-right:2px solid #fff;
-    -webkit-transition:height 0.3s linear,top 0.3s linear;
-    transition:height 0.3s linear,top 0.3s linear;
+	width:100%;
+	height:0;
+	top:50%;
+	border-left:2px solid #fff;
+	border-right:2px solid #fff;
+	-webkit-transition:height 0.3s linear,top 0.3s linear;
+	transition:height 0.3s linear,top 0.3s linear;
 }
 article figure:hover #top-bottom2::before{
 	height:100%;
 	top:0;
 }
 #top-bottom2::after{
-    width:0;
-    height:100%;
+	width:0;
+	height:100%;
 	top:0;
-    left:50%;
-    border-top:2px solid #fff;
-    border-bottom:2px solid #fff;
-    -webkit-transition:width 0.3s linear,left 0.3s linear;
-    transition:width 0.3s linear,left 0.3s linear;
+	left:50%;
+	border-top:2px solid #fff;
+	border-bottom:2px solid #fff;
+	-webkit-transition:width 0.3s linear,left 0.3s linear;
+	transition:width 0.3s linear,left 0.3s linear;
 }
 article figure:hover #top-bottom2::after{
 	width:100%;
@@ -218,9 +217,9 @@ article figure:hover #top-bottom2::after{
 #left-right3::after,
 #top-bottom3::before,
 #top-bottom3::after{
-    content:'';
-    position:absolute;
-    background:#ffffff;
+	content:'';
+	position:absolute;
+	background:#ffffff;
 }
 /*2-5-3-2.左边框效果*/
 #left-right3::before{
@@ -228,14 +227,14 @@ article figure:hover #top-bottom2::after{
 	height:0;
 	top:-200%;
 	left:0;
-    -webkit-transition:top 0.2s linear 0.1s,height 0.2s linear 0.1s;
-    transition:top 0.2s linear 0.1s,height 0.2s linear 0.1s;
+	-webkit-transition:top 0.2s linear 0.1s,height 0.2s linear 0.1s;
+	transition:top 0.2s linear 0.1s,height 0.2s linear 0.1s;
 }
 article figure:hover #left-right3::before{
-    height:100%;
-    top:0;
-    -webkit-transition:top 0.2s linear,height 0.2s linear;
-    transition:top 0.2s linear,height 0.2s linear;
+	height:100%;
+	top:0;
+	-webkit-transition:top 0.2s linear,height 0.2s linear;
+	transition:top 0.2s linear,height 0.2s linear;
 }
 /*2-5-3-3.上边框效果*/
 #top-bottom3::before{
@@ -243,11 +242,11 @@ article figure:hover #left-right3::before{
 	height:2px;
 	top:0;
 	left:0;
-    -webkit-transition:width 0.1s linear 0.1s;
-    transition:width 0.1s linear 0.1s;
+	-webkit-transition:width 0.1s linear 0.1s;
+	transition:width 0.1s linear 0.1s;
 }
 article figure:hover #top-bottom3::before{
-    width:100%;
+	width:100%;
 }
 /*2-5-3-4.右边框效果*/
 #left-right3::after{
@@ -256,12 +255,12 @@ article figure:hover #top-bottom3::before{
 	top:0;
 	right:0;
 	-webkit-transition:height 0.1s linear;
-    transition:height 0.1s linear;
+	transition:height 0.1s linear;
 }
 article figure:hover #left-right3::after{
 	height:100%;
 	-webkit-transition:height 0.1s linear 0.2s;
-    transition:height 0.1s linear 0.2s;
+	transition:height 0.1s linear 0.2s;
 }
 /*2-5-3-5.下边框效果*/
 #top-bottom3::after{
@@ -270,12 +269,12 @@ article figure:hover #left-right3::after{
 	left:0;
 	bottom:0;
 	-webkit-transition:width 0.1s linear;
-    transition:width 0.1s linear;
+	transition:width 0.1s linear;
 }
 article figure:hover #top-bottom3::after{
 	width:100%;
 	-webkit-transition:width 0.1s linear 0.2s;
-    transition:width 0.1s linear 0.2s;
+	transition:width 0.1s linear 0.2s;
 }
 /*2-5-4.自设边框效果,使用transform(rotate/scale3d)、transform-origin*/
 /*2-5-4-1.构建伪元素*/
@@ -283,13 +282,13 @@ article figure:hover #top-bottom3::after{
 #left-right4::after,
 #top-bottom4::before,
 #top-bottom4::after{
-    content:'';
-    position:absolute;
-    background:#ffffff;
-    -webkit-transition:all 0.3s;
-    transition:all 0.3s;
-    -webkit-transition-timing-function:cubic-bezier(0.44, 0.05, 0.55, 0.95);
-    transition-timing-function:cubic-bezier(0.44, 0.05, 0.55, 0.95);/*贝塞尔曲线*/
+	content:'';
+	position:absolute;
+	background:#ffffff;
+	-webkit-transition:all 0.3s;
+	transition:all 0.3s;
+	-webkit-transition-timing-function:cubic-bezier(0.44, 0.05, 0.55, 0.95);
+	transition-timing-function:cubic-bezier(0.44, 0.05, 0.55, 0.95);/*贝塞尔曲线*/
 }
 /*2-5-4-2.构建左右边框*/
 #left-right4::before,
@@ -350,6 +349,6 @@ footer{
 footer p{
 	margin:0;
 	padding:0;
-    text-align:center;
-    line-height:50px;
+	text-align:center;
+	line-height:50px;
 }
