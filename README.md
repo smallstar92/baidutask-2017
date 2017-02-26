@@ -12,7 +12,7 @@
 4.实现按钮边框的从中间到两边扩展开。<br/>
 完成时间：2017-2-26。<br/>
 完成效果：完成任务所要求效果，对边框扩展的实现使用了两种方法，并使用css3实现了两种另外的效果。<br/>
-demo：<br/>
-demo代码：<br/>
+demo：http://smallstarz.com/baidutask-2017/nuomi-task1-mouseSuspending/mouseSuspending.html;<br/>
+demo代码：https://github.com/smallstar92/baidutask-2017/tree/gh-pages/nuomi-task1-mouseSuspending;<br/>
 学习笔记：<br/>
 
