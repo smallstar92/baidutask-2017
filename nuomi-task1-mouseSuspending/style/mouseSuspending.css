@@ -82,6 +82,7 @@ div>a{
 	position: relative;
 	text-align:center;
 	line-height:120px;
+	z-index:2;
 }
 /*2-2.文字流光渐变*/
 div>a{
