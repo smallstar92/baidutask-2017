@@ -16,3 +16,16 @@ demo：http://smallstarz.com/baidutask-2017/nuomi-task1-mouseSuspending/mouseSus
 demo代码：https://github.com/smallstar92/baidutask-2017/tree/gh-pages/nuomi-task1-mouseSuspending;<br/>
 学习笔记：<br/>
 
+
+
+># task2：CSS3饼状loading效果（糯米学院-进阶）
+
+任务描述：<br/>
+1.需要使用HTML和CSS实现半圆和四分之三圆环；<br/>
+2.longding动画页面上下左右剧中；<br/>
+3.所有的动画元素采用HTML和CSS实现。<br/>
+完成时间：2017-3-15。<br/>
+完成效果：按照任务内容完成效果，对于制作圆饼，使用了两种方法实现。<br/>
+demo：http://smallstarz.com/baidutask-2017/nuomi-task2-loadingcircle/loadingcircle.html;<br/>
+demo代码：https://github.com/smallstar92/baidutask-2017/tree/gh-pages/nuomi-task2-loadingcircle;<br/>
+学习笔记：<br/>
