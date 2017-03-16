@@ -63,15 +63,15 @@ article>p{
 }
 /*2-1-1.制作大圆背景*/
 .bgcircle{
-  position:relative;
-  display:inline-block;
-  height:80px;
-  width:80px;
-  margin:50% 0 0 50%;
-  top:-30px;
-  left:-30px;
-  border-radius:50%;
-  overflow:hidden;
+	position:relative;
+	display:inline-block;
+	height:80px;
+	width:80px;
+	margin:50% 0 0 50%;
+	top:-30px;
+	left:-30px;
+	border-radius:50%;
+	overflow:hidden;
 }
 /*2-2.loading圆环*/
 .bgcircle::before{
@@ -84,37 +84,37 @@ article>p{
 	border-top:4px solid transparent;
 	border-radius:50%;
 	-webkit-animation:circle-spining 2s infinite linear;
-  animation:circle-spining 2s infinite linear;
-  -webkit-transform-origin:50% 50% 0;
-  transform-origin:50% 50% 0;
+	animation:circle-spining 2s infinite linear;
+	-webkit-transform-origin:50% 50% 0;
+	transform-origin:50% 50% 0;
 }
 @keyframes circle-spining{
-  0%{transform:rotate(0deg);}
-  50%{transform:rotate(-180deg);}
-  100%{transform:rotate(-360deg);}
+	0%{transform:rotate(0deg);}
+	50%{transform:rotate(-180deg);}
+	100%{transform:rotate(-360deg);}
 }
 @-webkit-keyframes circle-spining{
-  0%{-webkit-transform:rotate(0deg);}
-  50%{-webkit-transform:rotate(-180deg);}
-  100%{-webkit-transform:rotate(-360deg);}
+	0%{-webkit-transform:rotate(0deg);}
+	50%{-webkit-transform:rotate(-180deg);}
+	100%{-webkit-transform:rotate(-360deg);}
 }
 /*2-3.loading圆饼*/
 /*2-3-1.方法1制作圆饼*/
 /*2-3-1-1.使用两个元素作为显示区域，并拼接圆饼背景*/
 .round1>.bgcircle>span{
-  position:absolute;
-  width:28px;
-  height:56px; 
-  margin:0;
-  padding:0;
-  top:12px;
-  overflow:hidden;
-  background:#A2057A;
+	position:absolute;
+	width:28px;
+	height:56px; 
+	margin:0;
+	padding:0;
+	top:12px;
+	overflow:hidden;
+	background:#A2057A;
 }
 .left{ 
-  left:12px;
-  border-top-left-radius:999px;
-  border-bottom-left-radius:999px;
+	left:12px;
+	border-top-left-radius:999px;
+	border-bottom-left-radius:999px;
 }
 .right{
 	left:40px;
@@ -123,70 +123,70 @@ article>p{
 }
 /*2-3-1-2.制作两个旋转半圆，分属两个父元素*/
 .spining{
-  position:absolute;
-  width:100%;
-  height:100%;
-  top:0; 
-  left:100%; 
-  border-radius:999px;
-  background:none repeat scroll 0 0 #BD50A3;
-  opacity:0.8;
-  -webkit-animation:ui-spinner-rotate-left 2s infinite;
-  animation:ui-spinner-rotate-left 2s infinite;
-  -webkit-transform-origin:0 50% 0;
-  transform-origin:0 50% 0;
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:100%;
+	border-radius:999px;
+	background:none repeat scroll 0 0 #BD50A3;
+	opacity:0.8;
+	-webkit-animation:ui-spinner-rotate-left 2s infinite;
+	animation:ui-spinner-rotate-left 2s infinite;
+	-webkit-transform-origin:0 50% 0;
+	transform-origin:0 50% 0;
 }
 .left>.spining{
-  border-bottom-left-radius:0;
-  border-top-left-radius:0;
+	border-bottom-left-radius:0;
+	border-top-left-radius:0;
 }
 .right>.spining{
 	left:-100%;
-  border-bottom-right-radius:0;
-  border-top-right-radius:0;
-  -webkit-transform-origin:100% 50% 0;
-  transform-origin:100% 50% 0;
+	border-bottom-right-radius:0;
+	border-top-right-radius:0;
+	-webkit-transform-origin:100% 50% 0;
+	transform-origin:100% 50% 0;
 }
 .spining{
-  -webkit-animation-delay:0s;
-  -webkit-animation-duration:2s;
-  -webkit-animation-timing-function:linear;
-  animation-delay:0s;
-  animation-duration:2s;
-  animation-timing-function:linear;
+	-webkit-animation-delay:0s;
+	-webkit-animation-duration:2s;
+	-webkit-animation-timing-function:linear;
+	animation-delay:0s;
+	animation-duration:2s;
+	animation-timing-function:linear;
 }
 .right>.spining{
-  -webkit-animation-name:ui-spinner-rotate-right;
-  animation-name:ui-spinner-rotate-right;
+	-webkit-animation-name:ui-spinner-rotate-right;
+	animation-name:ui-spinner-rotate-right;
 }
 /*2-3-1-3.设置动画*/
 @keyframes ui-spinner-rotate-right{
-  0%{transform:rotate(0deg);}
-  25%{transform:rotate(0deg);}
-  50%{transform:rotate(-180deg);}
-  75%{transform:rotate(-180deg);}
-  100%{transform:rotate(-360deg);}
+	0%{transform:rotate(0deg);}
+	25%{transform:rotate(0deg);}
+	50%{transform:rotate(-180deg);}
+	75%{transform:rotate(-180deg);}
+	100%{transform:rotate(-360deg);}
 }
 @keyframes ui-spinner-rotate-left{
-  0%{transform:rotate(0deg);}
-  25%{transform:rotate(-180deg);}
-  50%{transform:rotate(-180deg);}
-  75%{transform:rotate(-360deg);}
-  100%{transform:rotate(-360deg);}
+	0%{transform:rotate(0deg);}
+	25%{transform:rotate(-180deg);}
+	50%{transform:rotate(-180deg);}
+	75%{transform:rotate(-360deg);}
+	100%{transform:rotate(-360deg);}
 }
 @-webkit-keyframes ui-spinner-rotate-right{
-  0%{-webkit-transform:rotate(0deg);}
-  25%{-webkit-transform:rotate(0deg);}
-  50%{-webkit-transform:rotate(-180deg);}
-  75%{-webkit-transform:rotate(-180deg);}
-  100%{-webkit-transform:rotate(-360deg);}
+	0%{-webkit-transform:rotate(0deg);}
+	25%{-webkit-transform:rotate(0deg);}
+	50%{-webkit-transform:rotate(-180deg);}
+	75%{-webkit-transform:rotate(-180deg);}
+	100%{-webkit-transform:rotate(-360deg);}
 }
 @-webkit-keyframes ui-spinner-rotate-left{
-  0%{-webkit-transform:rotate(0deg);}
-  25%{-webkit-transform:rotate(-180deg);}
-  50%{-webkit-transform:rotate(-180deg);}
-  75%{-webkit-transform:rotate(-360deg);}
-  100%{-webkit-transform:rotate(-360deg);}
+	0%{-webkit-transform:rotate(0deg);}
+	25%{-webkit-transform:rotate(-180deg);}
+	50%{-webkit-transform:rotate(-180deg);}
+	75%{-webkit-transform:rotate(-360deg);}
+	100%{-webkit-transform:rotate(-360deg);}
 }
 /*2-3-2.方法2制作圆饼：利用双循环动画制作*/
 .round2>.bgcircle::before{
@@ -204,9 +204,9 @@ article>p{
 	left:12px; 
 }
 .inner{
-  opacity:1;
-  background-color:#1C10AE; 
-  animation:second-half-hide 2s steps(1, end) infinite;
+	opacity:1;
+	background-color:#1C10AE;
+	animation:second-half-hide 2s steps(1, end) infinite;
 }
 .inner2{ 
 	opacity:0; 
@@ -255,18 +255,18 @@ article>p{
 }
 /*2-3-2-7.设置动画*/
 @keyframes spin{
-  0%{transform:rotate(360deg);}
-  100%{transform:rotate(0deg);}
+	0%{transform:rotate(360deg);}
+	100%{transform:rotate(0deg);}
 }
 @keyframes second-half-hide{
-  0%{opacity:1;}
-  50%{opacity:0;}
-  100%{opacity:0;}
+	0%{opacity:1;}
+	50%{opacity:0;}
+	100%{opacity:0;}
 }
 @keyframes second-half-show{
-  0%{opacity:0;}
-  50%{opacity:1;}
-  100%{opacity:1;}
+	0%{opacity:0;}
+	50%{opacity:1;}
+	100%{opacity:1;}
 }
 
 /*3.footer*/
@@ -283,6 +283,6 @@ footer p{
 	width:100%;
 	margin:0;
 	padding:0;
-  text-align:center;
-  line-height:50px;
+	text-align:center;
+	line-height:50px;
 }
