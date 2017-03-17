@@ -1,0 +1,177 @@
+*{margin: 0;padding: 0;}
+header,footer{background-color: #F9AA06;height:60px;font-size: 14px;}
+p,ul,ol,dl,span,table,form{font-size:12px;}
+body{background: #DEDEDE;font-family:'Microsoft YaHei';}
+
+/*设置头部*/
+header h1 a{
+	display: block;
+	float:left;
+}
+
+header h1 a img{
+	height:60px;
+}
+
+header ul{
+	position:absolute;
+	right: 5px;
+	top: 0;
+}
+
+header ul li{
+	text-align:center;
+	float:left;
+	line-height: 60px;
+	height: 60px;
+	margin-right: 20px;
+}
+
+header ul li a{
+	text-decoration: none;
+	color:#FFFFFF; 
+	display: block;
+}
+
+header ul li:hover{
+	color: #333333;
+	background: #FF8000;
+}
+
+header ul li a:hover{
+	color: #333333;
+}
+
+/*设置中部*/
+/*第一节和第二节*/
+article,aside{
+	margin: 20px;
+	padding: 20px;
+	background: #FFFFFF;
+}
+
+h2,h3,p{
+	margin: 10px 0;
+}
+
+h3{
+	color: #606561;
+	font-size: 16px;
+}
+
+article p{
+	line-height: 20px;
+}
+
+.auther{
+	color: #918887;
+	font-size: 12px;
+}
+.zhengwen{
+	text-indent: 2em;
+}
+
+article p a{
+	text-decoration: none;
+}
+
+article p a:hover{
+	color:#FF0000;
+}
+
+article ul li{
+	list-style-type: none;
+}
+
+/*第三节*/
+article dl dd{
+	border: 1px solid #DEDEDE;
+	margin: 10px 0;
+	width: 120px;
+	text-align: center;
+	padding: 5px 0;
+}
+
+article dl dd span{
+	display: block;
+	margin-bottom:10px;
+}
+
+article dl dd img{
+	width: 100px;
+}
+/*第四节*/
+article ol li{
+	list-style-position: inside;
+	text-indent: 2em;
+}
+
+table{
+	width:100%;
+	border-collapse:collapse;
+}
+
+table tr th,td{
+	border:1px solid #DEDEDE;
+}
+
+table tr th{
+	background:#333333;
+	color:#FFFFFF;
+	text-align: left;
+}
+
+#last{
+	background: #DEDEDE;
+}
+
+/*第五节*/
+#celan{
+	border-left: 3px solid #DEDEDE;
+	padding-left: 10px;
+	line-height: 36px;
+	color: #333333;
+}
+
+form div{
+	margin:5px 0;
+}
+
+.blign{
+	float: left;
+	width: 36%;
+	text-align: right;
+}
+
+form p{
+	margin-left: 36%;
+	font-size: 10px;
+	color: #808080;
+	margin-top: 0;
+}
+
+aside textarea{
+	width:60%;
+	height: 100px;
+}
+
+#smit{
+	margin:5px auto;
+	width: 100%;
+	height: 40px;
+	color: #FFFFFF;
+	font-size: 20px;
+	border-radius:5px;
+	background: #0080FF;
+	border:none;
+}
+
+#smit:hover{
+	background: #0000FF;
+}
+
+/*设置footer*/
+footer p{
+	text-align: center;
+	line-height: 60px;
+}
