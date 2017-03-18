@@ -14,7 +14,7 @@
 完成效果：完成任务所要求效果，对边框扩展的实现使用了两种方法，并使用css3实现了两种另外的效果。<br/>
 demo：http://smallstarz.com/baidutask-2017/nuomi-task1-mouseSuspending/mouseSuspending.html;<br/>
 demo代码：https://github.com/smallstar92/baidutask-2017/tree/gh-pages/nuomi-task1-mouseSuspending;<br/>
-学习笔记：<br/>
+学习笔记：http://smallstarz.com/2017/02/26/baidu2017-nuomitask1-css/;<br/>
 
 
 
@@ -28,4 +28,35 @@ demo代码：https://github.com/smallstar92/baidutask-2017/tree/gh-pages/nuomi-t
 完成效果：按照任务内容完成效果，对于制作圆饼，使用了两种方法实现。<br/>
 demo：http://smallstarz.com/baidutask-2017/nuomi-task2-loadingcircle/loadingcircle.html;<br/>
 demo代码：https://github.com/smallstar92/baidutask-2017/tree/gh-pages/nuomi-task2-loadingcircle;<br/>
-学习笔记：<br/>
+学习笔记：http://smallstarz.com/2017/02/26/baidu2017-nuomitask1-css/;<br/>
+
+
+
+># task3-7：小薇学院基础任务1-5
+
+任务描述：<br/>
+小薇学院主要是通过练习一些基础任务，达到巩固html/css基础的目的。学院的任务主要来自百度前端技术学院2016，
+在2月份的时候，已经完成了百度前端技术学院2016的五个基础任务，通过再一次学习和修改代码，进一步巩固基础。<br/>
+#任务一：零基础HTML编码<br/>
+完成时间：2017-3-16。<br/>
+完成效果：通过此任务，主要了解html各类标签的使用，主要掌握标签语义化，这是html5的主旨之一。<br/>
+demo：http://smallstarz.com/baidutask-2017/xiaoweixueyuan/task1/task_1_2_1.html;<br/>
+demo代码：http://github.com/smallstar92/baidutask-2017/tree/gh-pages/xiaoweixueyuan/task1;<br/>
+#任务二：零基础HTML及CSS编码（一）<br/>
+完成时间：2017-3-16。<br/>
+完成效果：通过此任务，主要对css的基础知识进行学习，掌握盒模型、定位等原理。<br/>
+demo：http://smallstarz.com/baidutask-2017/xiaoweixueyuan/task2/task_1_2_1.html;<br/>
+demo代码：http://github.com/smallstar92/baidutask-2017/tree/gh-pages/xiaoweixueyuan/task2;<br/>
+#任务三：三栏式布局<br/>
+完成时间：2017-3-17。<br/>
+完成效果：个人认为，三栏式布局除了一般定宽的布局之外，需要了解双飞翼/圣杯布局。在完成本任务时，分别使用了圣杯及双飞翼来实现三栏式，
+详请见代码地址。具体两者的使用和区别请见学习报告。<br/>
+demo1：http://smallstarz.com/baidutask-2017/xiaoweixueyuan/task3/shuangfeiyi/task_1_3_1.html;<br/>
+demo2：http://smallstarz.com/baidutask-2017/xiaoweixueyuan/task3/shengbei/task_1_3_1.html;<br/>
+demo代码：http://github.com/smallstar92/baidutask-2017/tree/gh-pages/xiaoweixueyuan/task3;<br/>
+学习笔记：http://smallstarz.com/2017/02/20/baidutask3-css/<br/>
+#任务四：定位和居中问题<br/>
+完成时间：2017-3-18。<br/>
+完成效果：对父元素采用定宽高，设置top/left值和margin-top/margin-left值来居中；此时，由于父元素已定宽高，对于两个子元素，直接使用top/left值即可定位到正确位置。对于子元素，直接设置border-radius值即可达到四分之一圆效果。<br/>
+demo：http://smallstarz.com/baidutask-2017/xiaoweixueyuan/task4/task_1_4_1.html;<br/>
+demo代码：http://github.com/smallstar92/baidutask-2017/tree/gh-pages/xiaoweixueyuan/task4;<br/>
