@@ -1,120 +1,111 @@
-*{margin: 0;padding: 0;}
-header,footer{background-color: #F9AA06;height:60px;font-size: 14px;}
+*{margin:0;padding:0;}
+header,footer{background-color:#F9AA06;height:60px;font-size:14px;}
 p,ul,ol,dl,span,table,form{font-size:12px;}
-body{background: #DEDEDE;font-family:'Microsoft YaHei';}
+body{background:#DEDEDE;font-family:'Microsoft YaHei';}
 
 /*设置头部*/
 header h1 a{
-	display: block;
+	display:block;
 	float:left;
-	height: 60px;
+	height:60px;
 }
-
 header img{
-	height: 60px;
+	height:60px;
 }
-
 header ul{
 	position:absolute;
-	right: 5px;
-	top: 0;
+	right:5px;
+	top:0;
 }
-
 header ul li{
 	text-align:center;
 	float:left;
-	line-height: 60px;
-	height: 60px;
-	margin-right: 20px;
+	height:60px;
+	line-height:60px;
+	margin-right:20px;
 }
-
 header ul li a{
-	text-decoration: none;
+	text-decoration:none;
 	color:#FFFFFF; 
-	display: block;
+	display:block;
 }
-
 header ul li:hover{
-	color: #333333;
-	background: #FF8000;
+	color:#333333;
+	background:#FF8000;
 }
-
 header ul li a:hover{
-	color: #333333;
+	color:#333333;
 }
-
 /*设置main层*/
 #main{
-	width: 100%;
-	float: left;
-	padding: 0 400px 0 0;
-	box-sizing: border-box;
-	background: #DEDEDE;
-	overflow: hidden;
-	margin: 0;
-	position: relative;
+	position:relative;
+	float:left;
+	width:100%;
+	margin:0;
+	padding:0 400px 0 0;
+	box-sizing:border-box;
+	background:#DEDEDE;
+	overflow:hidden;
 }
 /*第一节和第二节*/
 article{
-	margin: 20px;
-	padding: 20px;
-	background: #FFFFFF;
+	margin:20px;
+	padding:20px;
+	background:#FFFFFF;
+	overflow:hidden;
 }
-
 h2,h3,p{
-	margin: 10px 0;
+	margin:10px 0;
 }
-
 h3{
-	color: #606561;
-	font-size: 16px;
+	color:#606561;
+	font-size:16px;
 }
-
 article p{
-	line-height: 20px;
+	line-height:20px;
 }
-
 .auther{
-	color: #918887;
-	font-size: 12px;
+	color:#918887;
+	font-size:12px;
 }
 .zhengwen{
-	text-indent: 2em;
+	text-indent:2em;
 }
-
 article p a{
-	text-decoration: none;
+	text-decoration:none;
 }
 
 article p a:hover{
 	color:#FF0000;
 }
-
 article ul li{
-	list-style-type: none;
+	list-style-type:none;
 }
-
+.imgp{
+	width:60%;
+}
 /*第三节*/
 article dl dd{
-	border: 1px solid #DEDEDE;
-	margin: 10px 0;
-	width: 120px;
-	text-align: center;
-	padding: 5px 0;
+	float:left;
+	width:120px;
+	margin:10px 5px;
+	padding:5px 0;
+	text-align:center;
+	border:1px solid #DEDEDE;
 }
 
 article dl dd span{
-	display: block;
+	display:block;
 	margin-bottom:10px;
 }
 
 article dl dd img{
-	width: 100px;
+	width:100px;
 }
 /*第四节*/
 article ol li{
-	list-style-position: inside;
-	text-indent: 2em;
+	list-style-position:inside;
+	text-indent:2em;
 }
 
 table{
@@ -129,30 +120,30 @@ table tr th,td{
 table tr th{
 	background:#333333;
 	color:#FFFFFF;
-	text-align: left;
+	text-align:left;
 }
 
 #last{
-	background: #DEDEDE;
+	background:#DEDEDE;
 }
 
 /*第五节*/
 aside{
+	position:relative;
+	float:left;
 	width:380px;
-	float: left;
-	box-sizing: border-box;
-	position: relative;
-	margin-left: -400px;
-	margin-top: 20px;
-	padding: 20px;
-	background: #FFFFFF;
+	box-sizing:border-box;
+	margin-left:-400px;
+	margin-top:20px;
+	padding:20px;
+	background:#FFFFFF;
 }
 
 #celan{
-	border-left: 3px solid #DEDEDE;
-	padding-left: 10px;
-	line-height: 36px;
-	color: #333333;
+	border-left:3px solid #DEDEDE;
+	padding-left:10px;
+	line-height:36px;
+	color:#333333;
 }
 
 form div{
@@ -160,43 +151,44 @@ form div{
 }
 
 .blign{
-	float: left;
-	width: 36%;
-	text-align: right;
+	float:left;
+	width:36%;
+	text-align:right;
 }
 
 form p{
-	margin-left: 36%;
-	font-size: 10px;
-	color: #808080;
-	margin-top: 0;
+	margin-left:36%;
+	margin-top:0;
+	font-size:10px;
+	color:#808080;
 }
 
 aside textarea{
 	width:60%;
-	height: 100px;
+	height:100px;
 }
 
 #smit{
+	width:100%;
+	height:40px;
 	margin:5px auto;
-	width: 100%;
-	height: 40px;
-	color: #FFFFFF;
-	font-size: 20px;
-	border-radius:5px;
-	background: #0080FF;
 	border:none;
+	border-radius:5px;
+	color:#FFFFFF;
+	font-size:20px;
+	background:#0080FF;
 }
 
 #smit:hover{
-	background: #0000FF;
+	background:#0000FF;
 }
 
 /*设置footer*/
 footer{
-	clear: both;
+	clear:both;
 }
 footer p{
-	text-align: center;
-	line-height: 60px;
+	margin-bottom:0;
+	text-align:center;
+	line-height:60px;
 }
