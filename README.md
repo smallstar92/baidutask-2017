@@ -60,3 +60,10 @@ demo代码：http://github.com/smallstar92/baidutask-2017/tree/gh-pages/xiaoweix
 完成效果：对父元素采用定宽高，设置top/left值和margin-top/margin-left值来居中；此时，由于父元素已定宽高，对于两个子元素，直接使用top/left值即可定位到正确位置。对于子元素，直接设置border-radius值即可达到四分之一圆效果。<br/>
 demo：http://smallstarz.com/baidutask-2017/xiaoweixueyuan/task4/task_1_4_1.html;<br/>
 demo代码：http://github.com/smallstar92/baidutask-2017/tree/gh-pages/xiaoweixueyuan/task4;<br/>
+#任务五：零基础HTML及CSS编码（二）<br/>
+完成时间：2017-3-18。<br/>
+完成效果：根据任务描述基本完成效果图样式，其中存在差别的地方在于：我的demo未设置边框阴影效果；此外，header和footer未采用黑色。
+对于任务的要求，为保证模块内图片自适应窗口宽度变化，对其宽度设置为百分数值；为保证十张图片完整显示，且随窗口宽度变化自动变化排列以适应，
+采用dd列表包含图片，并设置向左漂移；对于这一个问题，还有一个解决思路是，设置其为内联块级元素或者display为自适应伸缩盒（flex）。<br/>
+demo：http://smallstarz.com/baidutask-2017/xiaoweixueyuan/task5/task_1_5_1.html;<br/>
+demo代码：http://github.com/smallstar92/baidutask-2017/tree/gh-pages/xiaoweixueyuan/task5;<br/>
