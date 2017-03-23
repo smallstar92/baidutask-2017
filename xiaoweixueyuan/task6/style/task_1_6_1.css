@@ -1,0 +1,13 @@
+*{margin: 0;padding: 0;box-sizing:border-box;}
+body{width:980px;height:1386px;margin:0 auto;padding:0 44px;}
+
+/*1.header*/
+header{
+	border-bottom:2px solid #938e8c
+}
+/*1-1.h1*/
+header>h1{
+	width:110px;
+	height:61px;
+	background:#D55D5C;
+}
