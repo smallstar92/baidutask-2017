@@ -1,13 +1,139 @@
-*{margin: 0;padding: 0;box-sizing:border-box;}
+*{margin:0;padding:0;box-sizing:border-box;}
 body{width:980px;height:1386px;margin:0 auto;padding:0 44px;}
 
 /*1.header*/
 header{
-	border-bottom:2px solid #938e8c
+	position:relative;
+	width:892px;
+	height:63px;
+	border-bottom:2px solid #938e8c;
 }
 /*1-1.h1*/
 header>h1{
 	width:110px;
 	height:61px;
 	background:#D55D5C;
+}
+header>h1>a{
+	display:block;
+	position:absolute;
+	width:110px;
+	bottom:0;
+	text-decoration:none;
+	text-align:center;
+	font-size:12px;
+	font-family:"黑体";
+	color:#ffffff;
+}
+/*1-2.time*/
+header>time{
+	position:absolute;
+	right:0;
+	bottom:0;
+	font-size:12px;
+	font-family:"黑体";
+	color:#d45d5c;
+	text-align:right;
+}
+
+/*2.content*/
+article{
+	margin-top:24px;
+}
+/*2-1.first article*/
+/*2-1-1.img*/
+article>div{
+	float:left;
+	position:relative;
+	width:641px;
+	height:301px;
+}
+div::before,div::after{
+	content:'';
+	position:absolute;
+	width:191px;
+	height:301px;
+	top:0;
+	opacity:0.5;
+}
+div::before{
+	left:0;
+	background:#0080FF;
+}
+div::after{
+	right:0;
+	background:#400040;
+}
+/*2-1-2.aside*/
+aside{
+	float:right;
+	position:relative;
+	width:203px;
+	border-top:2px solid #cc8091;
+}
+aside>h3{
+	font-size:24px;
+	font-family:"微软雅黑";
+	line-height:40px;
+	color:#000000;
+	text-decoration:underline;
+}
+#introduction{
+	font-size:12px;
+	font-family:"楷体";
+	line-height:10px;
+	color:#676767;
+}
+
+#issue{
+	display:block;
+	font-size:116px;
+	font-family:"微软雅黑";
+	font-style:oblique;
+	color:#75b86b;
+	text-decoration:underline;	
+}
+#addre{
+	position:relative;
+	bottom:0;
+	overflow:hidden;
+}
+#log{
+	float:left;
+	font-size:55px;
+	font-family:"微软雅黑";
+	color:#cc8091;
+}
+#txt{
+	display:inline-block;
+	padding-top:22px;
+	font-size:21px;
+	font-family:"微软雅黑";
+	color:#cc8091;
+}
+#addre>a{
+	position:absolute;
+	font-size:12px;
+	font-family:"微软雅黑";
+	color:#cc8091;
+	text-decoration:none;
+}
+
+/*footer*/
+footer{
+	position:absolute;
+	width:892px;
+	height:24px;
+	bottom:0;
+	border-top:1px soild #938e8c; 
+}
+/*copyright*/
+footer>p{
+	position:absolute;
+	right:0;
+	top:0;
+	font-size:12px;
+	font-family:"黑体";
+	color:#d45d5c;
+	text-align:right;
 }
