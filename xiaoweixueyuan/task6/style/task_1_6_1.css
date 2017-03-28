@@ -38,7 +38,8 @@ header>time{
 
 /*2.content*/
 article{
-	margin-top:24px;
+	margin-top:34px;
+	overflow:hidden;
 }
 /*2-1.first article*/
 /*2-1-1.img*/
@@ -48,7 +49,7 @@ article>div{
 	width:641px;
 	height:301px;
 }
-div::before,div::after{
+article>div::before,article>div::after{
 	content:'';
 	position:absolute;
 	width:191px;
@@ -56,11 +57,11 @@ div::before,div::after{
 	top:0;
 	opacity:0.5;
 }
-div::before{
+article>div::before{
 	left:0;
 	background:#0080FF;
 }
-div::after{
+article>div::after{
 	right:0;
 	background:#400040;
 }
@@ -118,14 +119,243 @@ aside>h3{
 	color:#cc8091;
 	text-decoration:none;
 }
+/*2-2.summary*/
+.summary{
+	float:left;
+	width:207px;
+	margin-left:10px;
+}
+.summary>h2{
+	font-size:16px;
+	font-family:"微软雅黑";
+	font-weight:bold; 
+	text-decoration:underline;
+}
+#titleone{
+	color:#418c59;
+}
+#titletwo{
+	color:#d2994f;
+}
+#titlethr{
+	color:#cc7680;
+}
+.summary>p{
+	font-size:12px;
+	font-family:"宋体";
+	line-height:16px;
+	color:#767777;
+}
+/*2-2-1.list*/
+.summary>ul{
+	position:absolute;
+	margin-top:24px;
+}
+.summary>ul>li{
+	font-size:12px;
+	font-family:"微软雅黑";
+	font-style:oblique;
+	line-height:16px;
+	color:#231815;
+	opacity:0.7;
+	list-style:none;
+}
+.summary>ul>li>span{
+	float:right;
+	color:#cd4a48;
+}
+/*2-3.words*/
+#leftwords{
+	position:relative;
+	float:left;
+	width:415px;
+	overflow:hidden;
+}
+#rightwords{
+	position:relative;
+	float:right;
+	width:458px;
+	overflow:hidden;
+}
+/*2-3-1.left*/
+#leftwords>h2{
+	border-bottom:2px solid #000000;
+	margin-bottom:20px;
+}
+#firstword{
+	font-size:72px;
+	font-family:"黑体";
+	font-weight:bold;
+	font-style:oblique;
+	color:#f5e327;
+}
+#secondword{
+	font-size:42px;
+	font-family:"黑体";
+	font-weight:bold;
+	line-height:16px;
+	color:#11456b;
+}
+#thirdword{
+	font-size:33px;
+	font-family:"黑体";
+	font-weight:bold;
+	color:#11456b;
+}
+#leftwords>p{
+	font-size:12px;
+	font-family:"宋体";
+	line-height:16px;
+	color:#767777;	
+}
+#firlet:first-letter{
+	float:left;
+	font-size:70px;
+	font-family:"微软雅黑";
+	color:#f5e327;	
+}
+#leftwords>p>img{
+	position:relative;
+	float:right;
+	margin:19px;
+	margin-right:0;
+}
+#rightwords>h2{
+	display:block;
+	position:relative;
+	width:458px;
+	height:275px;
+	background:url(../img/post-winter.jpg);
+}
+#rightwords>h2>p{
+	position:absolute;
+	width:458px;
+	height:60px;
+	bottom:0;
+	background:rgba(0,0,0,0.3);
+}
+#rightwords>h2>p>span{
+	display:block;
+	height:44px;
+	margin-left:40px;
+	margin-top:8px;
+	margin-bottom:8px;
+	border-left:3px solid #72b16a;
+	font-size:26px;
+	font-family:"微软雅黑";
+	line-height:44px;
+	color:#ffffff;
+}
+#rightwords>h2>p>span>span{
+	font-size:12px;
+	font-family:"微软雅黑";
+	font-style:oblique;
+	letter-spacing:140%;
+	color:#72b16a;
+}
+#rightwords>div{
+	width:458px;
+	height:318px;
+	margin-top:20px;
+	background:#EEEED6;
+	overflow:hidden;
+}
+#rightwords>div>ul{
+	position:relative;
+	margin-top:20px;
+	margin-left:40px;
+}
+#rightwords>div>ul>li{
+	margin-bottom:10px;
+	list-style:url(../img/post-tubiao.png);
+	font-size:16px;
+	font-family:"宋体";
+	line-height:20px;
+	color:#5a5b5b;
+}
+#rightwords>div>ul>li>span{
+	float:right;
+	margin-right:20px;
+	font-size:12px;
+	font-style:oblique;
+}
+#rightwords>div>div{
+	float:left;
+	position:absolute;
+	width:260px;
+	height:160px;
+	left:0;
+	bottom:0;
+	background:#D55D5C;
+}
+#star{
+	font-size:110px;
+	font-family:"微软雅黑";
+	line-height:160px;
+	color:#ffffff;
+}
+#addre2{
+	position:relative;
+	float:right;
+	width:148px;
+	height:86px;
+	padding-top:10px;
+	padding-left:5px;
+	top:42px;
+	border-left:2px solid #ffffff;
+}
+#addre2>span{
+	font-size:21px;
+	font-family:"黑体";
+	font-style:oblique;
+	line-height:24px;
+	color:#ffffff;
+}
+#addre2>a{
+	font-size:12px;
+	font-family:"黑体";
+	line-height:6px;
+	text-decoration:none;
+	color:#ffffff;
+}
+#rightwords>div>p{
+	position:relative;
+	float:right;
+	width:160px;
+	margin-top:25px;
+	margin-right:20px;
+	font-size:14px;
+	font-family:"黑体";
+	font-style:oblique;
+	line-height:16px;
+	color:#5a5b5b;
+}
+#rightwords>div>p::before{
+	content:"\201c";
+	position:absolute;
+	left:-40px;
+	top:18px;
+	font-size:72px;
+	font-style:normal;
+	color:#d45d5c;
+}
+#rightwords>div>p::after{
+	content:"\201d";
+	position:absolute;
+	right:-10px;
+	bottom:-25px;
+	font-size:72px;
+	font-style:normal;
+	color:#d45d5c;
+}
 
 /*footer*/
 footer{
-	position:absolute;
+	position:relative;
 	width:892px;
 	height:24px;
-	bottom:0;
-	border-top:1px soild #938e8c; 
+	margin-top:20px;
+	border-top:1px solid #938e8c; 
 }
 /*copyright*/
 footer>p{
