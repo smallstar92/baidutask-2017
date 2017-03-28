@@ -197,6 +197,7 @@ aside>h3{
 	color:#11456b;
 }
 #thirdword{
+	padding-left:10px;
 	font-size:33px;
 	font-family:"黑体";
 	font-weight:bold;
@@ -208,10 +209,14 @@ aside>h3{
 	line-height:16px;
 	color:#767777;	
 }
+.seclet{
+	text-indent:2em;
+}
 #firlet:first-letter{
 	float:left;
 	font-size:70px;
 	font-family:"微软雅黑";
+	line-height:70px;
 	color:#f5e327;	
 }
 #leftwords>p>img{
@@ -287,6 +292,7 @@ aside>h3{
 	left:0;
 	bottom:0;
 	background:#D55D5C;
+	overflow:hidden;
 }
 #star{
 	font-size:110px;
@@ -315,6 +321,7 @@ aside>h3{
 	font-size:12px;
 	font-family:"黑体";
 	line-height:6px;
+	word-wrap:break-word;
 	text-decoration:none;
 	color:#ffffff;
 }
@@ -327,13 +334,14 @@ aside>h3{
 	font-size:14px;
 	font-family:"黑体";
 	font-style:oblique;
+	text-indent:2em;
 	line-height:16px;
 	color:#5a5b5b;
 }
 #rightwords>div>p::before{
 	content:"\201c";
 	position:absolute;
-	left:-40px;
+	left:-65px;
 	top:18px;
 	font-size:72px;
 	font-style:normal;
@@ -342,7 +350,7 @@ aside>h3{
 #rightwords>div>p::after{
 	content:"\201d";
 	position:absolute;
-	right:-10px;
+	right:-30px;
 	bottom:-25px;
 	font-size:72px;
 	font-style:normal;
