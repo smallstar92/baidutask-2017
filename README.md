@@ -67,3 +67,10 @@ demo代码：http://github.com/smallstar92/baidutask-2017/tree/gh-pages/xiaoweix
 采用dd列表包含图片，并设置向左漂移；对于这一个问题，还有一个解决思路是，设置其为内联块级元素或者display为自适应伸缩盒（flex）。<br/>
 demo：http://smallstarz.com/baidutask-2017/xiaoweixueyuan/task5/task_1_5_1.html;<br/>
 demo代码：http://github.com/smallstar92/baidutask-2017/tree/gh-pages/xiaoweixueyuan/task5;<br/>
+#任务六：通过HTML及CSS模拟报纸排版<br/>
+完成时间：2017-3-28。<br/>
+完成效果：主要通过该任务，对css布局定位/字号设置等进行了学习，目前，已经能够熟悉掌握css/html。在完成过程中遇到的问题：
+对段落首字进行下沉时，需要设定其行高等于字体尺寸，否则在某些浏览器里不会达到首字下沉效果；对a标签的url地址等，
+需要设置其word-wrap:break-word，否则在某些浏览器里不会有自动强制换行的效果。<br>
+demo：http://smallstarz.com/baidutask-2017/xiaoweixueyuan/task6/task_1_6_1.html;<br>
+demo代码：http://github.com/smallstar92/baidutask-2017/tree/gh-pages/xiaoweixueyuan/task6;<br>
