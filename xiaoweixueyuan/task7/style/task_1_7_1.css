@@ -112,6 +112,7 @@ header>ul>li:hover>a{
 	height:65px;
 	left:126px;
 	top:428px;
+	border-radius:2px;
 	font-size:30px;
 	font-family:"微软雅黑";
 	line-height:65px;
@@ -119,6 +120,9 @@ header>ul>li:hover>a{
 	text-decoration:none;
 	color:#ffffff;
 	background:#e74f4d;
+}
+#poster>div>a:hover{
+	color:#8000FF;
 }
 /*2-2.ul(explain)*/
 #poster>ul{
@@ -162,4 +166,126 @@ header>ul>li:hover>a{
 }
 #rightsp{
 	border-left:1px solid #767777;
+}
+/*3.lead-txt*/
+#lead-txt{
+	position:relative;
+	width:1280px;
+	height:360px;
+	margin:0 auto;
+	background:#edecec;
+	text-align:center;
+}
+#lead-txt>img{
+	display:block;
+	position:absolute;
+	top:90px;
+	left:50%;
+	transform:translateX(-50%);
+}
+#lead-txt>span{
+	display:block;
+	position:absolute;
+	top:228px;
+	left:212px;
+	font-size:54px;
+	font-family:"黑体";
+	color:#323333;
+}/*居中的两种方法区别*/
+/*4.city-activity*/
+#city-activity{
+	position:relative;
+	width:1280px;
+	height:950px;
+	margin:0 auto;
+	background:#ffffff;
+}
+/*4-1.searching-form*/
+#city-activity>section{
+	position:absolute;
+	width:1280px;
+	height:340px;
+	background:url(../img/post-lighthouse.jpg);
+	z-index:2;
+}
+#city-activity>section>h2{
+	position:absolute;
+	top:50px;
+	left:50%;
+	transform:translateX(-50%);
+	font-size:21px;
+	font-family:"微软雅黑";
+	color:#ffffff;
+}
+#city-activity>section>h2::before{
+	content:'';
+	position:absolute;
+	width:30px;
+	height:3px;
+	bottom:-10px;
+	left:50%;
+	transform:translateX(-50%);
+	background:#ffffff;
+}
+#city-activity>section>span{
+	display:block;
+	position:absolute;
+	top:107px;
+	left:50%;
+	transform:translateX(-50%);
+	font-size:12px;
+	font-family:"微软雅黑";
+	color:#ffffff;
+}
+/*4-1-1.form*/
+#city-activity>section>form{
+	position:absolute;
+	width:1280px;
+	height:36px;
+	top:170px;
+	text-align:center;
+}
+#city-activity>section>form>select,#city-activity>section>form>input{
+	display:inline-block;
+	border:1px solid #edecec;
+	border-radius:1px;
+	width:236px;
+	height:36px;
+}
+#city-activity>section>form>select{
+	margin-right:28px;
+	border:1px solid #edecec;
+	padding-left:6px;
+	appearance:none;
+	-moz-appearance:none;
+	-webkit-appearance:none;
+	background:url(../img/tb-pull.png) scroll right center;
+	font-size:12px;
+	font-family:"微软雅黑";
+	color:#a8aaaa;
+}
+#city-activity>section>form>select:hover,#city-activity>section>form>select:active{
+	border:1px solid #e74f4d;
+}
+#city-activity>section>form>select>option{
+	color:#323333;
+	background:#e4e3e5;
+}
+#city-activity>section>form>input{
+	font-size:14px;
+	font-family:"微软雅黑"; 
+	background:#e74f4d;
+	color:#ffffff;
+}
+#city-activity>section>form>input:hover{
+	border:1px solid #8000FF;
+	color:#8000FF;
+}
+/*4-2.*/
+#city-activity>nav{
+	position:absolute;
+	width:1280px;
+	height:630px;
+	bottom:0;
+	background:#f7f7f7;
 }
