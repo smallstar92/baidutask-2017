@@ -74,3 +74,14 @@ demo代码：http://github.com/smallstar92/baidutask-2017/tree/gh-pages/xiaoweix
 需要设置其word-wrap:break-word，否则在某些浏览器里不会有自动强制换行的效果。<br>
 demo：http://smallstarz.com/baidutask-2017/xiaoweixueyuan/task6/task_1_6_1.html;<br>
 demo代码：http://github.com/smallstar92/baidutask-2017/tree/gh-pages/xiaoweixueyuan/task6;<br>
+#任务七：实现常见的技术产品官网的页面架构及样式布局<br/>
+完成时间：2017-4-1。<br/>
+完成效果：通过完成本任务，进一步了解html结构/css样式编写，在本任务中使用了部分css3动画效果，让按钮/图片转换等看起来更平滑。
+此外，在过程中也发现几处之前不曾注意会出现误差的细节，并且，感觉需要对css选择器的优化进行学习。<br>
+demo：http://smallstarz.com/baidutask-2017/xiaoweixueyuan/task7/task_1_7_1.html;<br>
+demo代码：http://github.com/smallstar92/baidutask-2017/tree/gh-pages/xiaoweixueyuan/task7;<br>
+#任务七：实现常见的技术产品官网的页面架构及样式布局<br/>
+完成时间：2017-4-4。<br/>
+完成效果：通过完成本任务，了解栅格化布局，主要使用到@media，此外，对bootstrap使用栅格化的原理进行了了解。<br>
+demo：http://smallstarz.com/baidutask-2017/xiaoweixueyuan/task8/task_1_8_1.html;<br>
+demo代码：http://github.com/smallstar92/baidutask-2017/tree/gh-pages/xiaoweixueyuan/task8;<br>
