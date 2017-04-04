@@ -32,7 +32,7 @@ demo代码：https://github.com/smallstar92/baidutask-2017/tree/gh-pages/nuomi-t
 
 
 
-># task3-7：小薇学院基础任务1-5
+># task1-8：小薇学院基础任务1-8 
 
 任务描述：<br/>
 小薇学院主要是通过练习一些基础任务，达到巩固html/css基础的目的。学院的任务主要来自百度前端技术学院2016，
