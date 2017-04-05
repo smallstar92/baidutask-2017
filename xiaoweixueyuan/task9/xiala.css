@@ -1,0 +1,92 @@
+*{   
+        padding: 0;   
+        margin: 0;         
+    }   
+    ul{   
+        list-style-type:none;   
+    }   
+    .triangle{   
+    
+        font-size: 1em;   
+        color: white;    
+    }   
+    a{   
+        text-decoration:none;   
+        text-align: center;   
+        font-weight: bold;   
+    
+    }   
+    /*一级导航*/  
+    ul.nav{   
+        float: left;   
+        border:1px solid gray;   
+        margin-left: 10%;   
+        margin-top:10px;   
+        border-radius: 4px;   
+        position: fixed;   
+    }   
+    ul.nav li{   
+        float: left;   
+        width: 9em;   
+        background-color:yellowgreen;   
+    }   
+    ul.nav a{   
+        display: block;   
+        color: white;   
+        line-height: 1.5em;   
+        border-right: 1px solid white;   
+        border-left: 1px solid white;   
+        padding: 5px;   
+    }   
+    
+    ul.nav a:hover,   
+    ul.nav a:focus{   
+        color: black;   
+        background-color: #98FB98;   
+        opacity: 0.5;   
+    }   
+    ul.nav li:first-child a{   
+        border-left: 0;   
+        border-bottom: 0;   
+    }   
+    ul.nav li:last-child a{   
+        border-right: 0;   
+        border-bottom: 0;   
+    }   
+    /*二级导航*/  
+    ul.nav li ul{   
+        width: 10em;           
+        position: absolute;   
+        left: -1000em;   
+    }   
+        
+    ul.nav li:hover ul{   
+        width: 10em;   
+        left:auto;   
+    }   
+        
+    ul.nav li ul a{   
+        border-top: 1px solid white;   
+        border-bottom: 1px solid white;   
+        border-left: 0;   
+        border-right: 0;   
+            
+    }   
+    /*三级导航*/  
+    ul.nav li:hover ul li ul{   
+        width: 10em;   
+        position: absolute;   
+        left: -1000em;   
+    
+    }   
+        
+    ul.nav li:hover ul li:hover ul{   
+        left: auto;   
+        margin-left: 9.1em;   
+        margin-top: -2.1em;   
+    }   
+    ul.nav li:hover ul li:hover ul.nav1{   
+        left: auto;   
+        margin-left: -9.1em;   
+        margin-top: -2.1em;   
+    }   
