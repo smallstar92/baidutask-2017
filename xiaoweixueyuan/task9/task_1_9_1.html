@@ -146,31 +146,171 @@
 			<h2>
 				<a href="#" id="list-1">c站</a><span>/</span><a href="#" id="list-2">个人报表</a><span>/</span><a href="#" id="list-3">文件一</a><span>/</span><a href="#" id="list-4">文档二</a>
 			</h2>
-			<div class="row-1">
+			<div class="row-1-10">
 				<div class="col-1-10">
 					<form>
-						<div></div>
-						<div></div>
-						<div></div>
-						<input type="" name="">
+						<div id="dv-item">
+							<label for="inp-item" class="label-txt">查询项</label>
+							<select name="inp-item" id="inp-item" class="inp-short">
+								<option value="第一项">第一项</option>
+								<option value="第二项">第二项</option>
+								<option value="第三项">第三项</option>
+							</select>
+						</div>
+						<div id="dv-buy">
+							<div>
+								<label for="inp-buy" class="label-txt">买方</label>
+								<select name="inp-buy" id="inp-buy" class="inp-long">
+									<option value="茨木">茨木</option>
+									<option value="酒吞">酒吞</option>
+									<option value="妖刀">妖刀</option>
+								</select>
+							</div>
+							<div class="dv-bottom">
+								<label for="inp-sell" class="label-txt">卖方</label>
+								<select name="inp-sell" id="inp-sell" class="inp-long">
+									<option value="晴明">晴明</option>
+									<option value="神乐">神乐</option>
+									<option value="八百">八百</option>
+								</select>
+							</div>
+						</div>
+						<div  id="dv-data">
+							<div>
+								<label for="inp-date" class="label-txt">日期</label>
+								<input type="text" name="inp-date" id="inp-date">
+								<label for="inp-time" class="label-txt label-right">总耗时</label>
+								<select name="inp-time" id="inp-time" class="inp-short">
+									<option value="1天">1天</option>
+									<option value="2天">2天</option>
+									<option value="3天">3天</option>
+								</select>
+							</div>
+							<div class="dv-bottom">
+								<label for="inp-people" class="label-txt">人数</label>
+								<select name="inp-people" id="inp-people" class="inp-short">
+									<option value="1人">1人</option>
+									<option value="2人">2人</option>
+									<option value="3人">3人</option>
+								</select>
+								<label for="inp-number" class="label-txt label-right">成交项</label>
+								<select name="inp-number" id="inp-number" class="inp-long">
+									<option value="1项">1项</option>
+									<option value="2项">2项</option>
+									<option value="3项">3项</option>
+								</select>
+							</div>
+						</div>
+						<input type="submit" value="搜索" name="inp-smit" id="inp-smit">
 					</form>
 				</div>
 				<div class="col-1-10" id="his-search">
 					<div>
-						<a href=""></a>
-						<div></div>
-						<a href=""></a>
-						<a href=""></a>
+						<a href="#" id="a-left"><img src="img/tb-his-search-1.png"></a>
+						<div id="row-2-12">
+							<a href="#" class="col-2-2">
+								<span class="sp-time">10:00 am</span>
+								<span class="sp-number">1200</span>
+							</a>
+							<a href="#" class="col-2-2">
+								<span class="sp-time">11:00 am</span>
+								<span class="sp-number">1300</span>
+							</a>
+							<a href="#" class="col-2-2">
+								<span class="sp-time">12:00 am</span>
+								<span class="sp-number">1200</span>
+							</a>
+							<a href="#" class="col-2-2">
+								<span class="sp-time">01:00 pm</span>
+								<span class="sp-number">1400</span>
+							</a>
+							<a href="#" class="col-2-2">
+								<span class="sp-time">02:00 pm</span>
+								<span class="sp-number">1500</span>
+							</a>
+							<a href="#" class="col-2-2">
+								<span class="sp-time">03:00 pm</span>
+								<span class="sp-number">1800</span>
+							</a>
+						</div>
+						<a href="#" id="a-right"><img src="img/tb-his-search-2.png"></a>
+						<a href="#" id="a-his"><img src="img/tb-his-search-3.png"><span>历史查询</span></a>
 					</div>
 				</div>
 				<div class="col-1-10" id="count">
 					<div>
-						<h3></h3>
-						<div></div>
+						<h3>2016年4月份统计</h3>
+						<div>
+							<div id="dv-green">
+								<span class="sp-number-2">133311</span>
+								<span class="sp-txt">成交量</span>
+							</div>
+							<div id="dv-blue">
+								<span class="sp-number-2">133311</span>
+								<span class="sp-txt">成交量</span>
+							</div>
+							<div id="dv-red">
+								<span class="sp-number-2">133311</span>
+								<span class="sp-txt">成交量</span>
+							</div>
+							<div id="dv-yellow">
+								<span class="sp-number-2">133311</span>
+								<span class="sp-txt">成交量</span>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="col-1-6">
-					<div></div>
+				<div class="col-1-6" id="project-table">
+					<div>
+						<h3>第一组项目</h3>
+						<div>
+							<a href="#" id="a-one">项目一</a>
+							<a href="#" id="a-two">项目一</a>
+							<a href="#" id="a-thr">项目一</a>
+							<a href="#" id="a-for">项目一</a>
+							<a href="#" id="a-fiv">项目一</a>
+							<div>
+								<table id="tab-1">
+									<tr>
+										<td>购买材料</td>
+										<td>购买材料</td>
+										<td>购买材料</td>
+										<td>购买材料</td>
+									</tr>
+									<tr>
+										<td>购买材料</td>
+										<td>购买材料</td>
+										<td>购买材料</td>
+										<td>购买材料</td>
+									</tr>
+									<tr>
+										<td>购买材料</td>
+										<td>购买材料</td>
+										<td>购买材料</td>
+										<td>购买材料</td>
+									</tr>
+									<tr>
+										<td>购买材料</td>
+										<td>购买材料</td>
+										<td>购买材料</td>
+										<td>购买材料</td>
+									</tr>
+									<tr>
+										<td>购买材料</td>
+										<td>购买材料</td>
+										<td>购买材料</td>
+										<td>购买材料</td>
+									</tr>
+									<tr>
+										<td>购买材料</td>
+										<td>购买材料</td>
+										<td>购买材料</td>
+										<td>购买材料</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class="col-1-4">
 					<div></div>
