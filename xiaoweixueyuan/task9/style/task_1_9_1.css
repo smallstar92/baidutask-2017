@@ -695,3 +695,150 @@ a[class*="col-2-"]:hover,a[class*="col-2-"]:focus{
 #tab-1>tbody>tr>td:hover{
 	background:#F3F5F6;
 }
+/*2-2-2-6.pandect*/
+#pandect>div{
+	border-radius:6px;
+}
+/*2-2-2-6-1.h3*/
+#pandect>div>h3{
+	display:block;
+	position:relative;
+	width:100%;
+	height:40px;
+	border-top-left-radius:6px;
+	border-top-right-radius:6px;
+	padding-left:20px;
+	font-size:12px;
+	font-family:"黑体";
+	line-height:40px;
+	color:#aaaaaa;
+	background:#F4F5F7;
+}
+/*2-2-2-6-2.pandect>div>div*/
+#pandect>div>div{
+	position:relative;
+	padding-left:17px;
+	padding-top:4px;
+}
+#dv-title{
+	float:left;
+	width:280px;
+	height:44px;
+	border-bottom:1px solid #E8E8E8;
+	top:14px;
+	left:34px;
+}
+#dv-price{
+	float:left;
+	width:96px;
+	height:44px;
+	border-right:1px solid #E8E8E8;
+	top:14px;
+	left:34px;
+}
+#dv-header{
+	float:left;
+	width:184px;
+	height:44px;
+	top:14px;
+	left:34px;
+}
+#dv-describe{
+	float:left;
+	width:280px;
+	height:146px;
+	border-top:1px solid #E8E8E8;
+	top:14px;
+	left:34px;
+}
+#pandect>div>div>h4{
+	font-size:12px;
+	font-family:"微软雅黑";
+	color:#c3c2c2;
+}
+#pandect>div>div>span{
+	font-size:12px;
+	font-family:"微软雅黑";
+	color:#535353;	
+}
+/*2-2-2-6-2.pandect>div>form*/
+#pandect>div>form{
+	float:left;
+	position:relative;
+	width:280px;
+	border-top:1px solid #E8E8E8;
+	padding-top:4px;
+	padding-left:3px;
+	left:34px;
+}
+#inp-agree{visibility:hidden;}
+#lab-agree{
+	cursor:pointer;
+	position:absolute;
+	width:14px;
+	height:14px;
+	border:1px solid #D6D6D6;
+	top:9px;
+	left:3px;
+}
+#lab-agree:hover{
+	border:1px solid #388AC1;
+}
+#inp-agree:checked + #lab-agree{
+	background:url(../img/tb-pandect-1.png);
+}
+#pandect>div>form>span{
+	font-size:12px;
+	font-family:"微软雅黑";
+	color:#c3c2c2;
+}
+#inp-smit-2{
+	position:absolute;
+	width:50px;
+	height:26px;
+	border:2px solid #388AC1;
+	border-radius:2px;
+	top:4px;
+	right:0px;
+	font-size:12px;
+	font-family:"黑体";
+	background:#388AC1;
+	color:#ffffff;
+	transition:color 0.1s linear,background 0.1s linear;
+	-webkit-transition:color 0.1s linear,background 0.1s linear;
+}
+#inp-smit-2:hover{
+	background:#ffffff;
+	color:#388AC1;
+}
+/*2-2-2-7.calender*/
+#calender>div{
+	border-radius:6px;
+}
+/*2-2-2-7-1.h3*/
+#calender>div>h3{
+	display:block;
+	position:relative;
+	width:100%;
+	height:40px;
+	border-top-left-radius:6px;
+	border-top-right-radius:6px;
+	padding-left:20px;
+	font-size:12px;
+	font-family:"黑体";
+	line-height:40px;
+	color:#aaaaaa;
+	background:#F4F5F7;
+}
+/*2-2-2-7-2.calender-form*/
+#calender>div>form{
+	position:relative;
+	width:310px;
+	height:42px;
+	padding:10px 0;
+	left:50%;
+	transform:translateX(-50%);
+}
+#calender>div>table{
+	position:relative;
+}
