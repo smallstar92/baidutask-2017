@@ -32,7 +32,7 @@ demo代码：https://github.com/smallstar92/baidutask-2017/tree/gh-pages/nuomi-t
 
 
 
-># task1-8：小薇学院基础任务1-8
+># task1-9：小薇学院基础任务1-9
 
 任务描述：<br/>
 小薇学院主要是通过练习一些基础任务，达到巩固html/css基础的目的。学院的任务主要来自百度前端技术学院2016，
@@ -85,3 +85,11 @@ demo代码：http://github.com/smallstar92/baidutask-2017/tree/gh-pages/xiaoweix
 完成效果：通过完成本任务，了解栅格化布局，主要使用到@media，此外，对bootstrap使用栅格化的原理进行了了解。<br>
 demo：http://smallstarz.com/baidutask-2017/xiaoweixueyuan/task8/task_1_8_1.html;<br>
 demo代码：http://github.com/smallstar92/baidutask-2017/tree/gh-pages/xiaoweixueyuan/task8;<br>
+完成时间：2017-4-9。<br/>
+完成效果：通过完成本任务，主要是对html和css进行了综合使用。该页面较复杂，使用到ul（ul的嵌套），table表格（table与其内部tr/td/th等的样式设置），
+form表单（表单内select/label/input等元素的样式设置）等元素。在完成过程中，对右边的主体部分采用了上个任务中学习到的栅格化布局思想；
+重点熟悉了:nth-child选择器的使用；最后，考虑代码复用的情况，对左侧栏的列表的类名及结构重新进行了设置，
+除第一层列表和最后一层列表的类名与中间层列表有少许差别外，中间层列表类名命名进行系统化，如果在后续使用js进行交互的话，可以嵌套多层列表；
+对右侧主体几大块区域的元素设置类名的时候，也重新进行了系统化，避免类名太多以致查找困难，设置重复<br>
+demo：http://smallstarz.com/baidutask-2017/xiaoweixueyuan/task9/task_1_9_1.html;<br>
+demo代码：http://github.com/smallstar92/baidutask-2017/tree/gh-pages/xiaoweixueyuan/task9;<br>
