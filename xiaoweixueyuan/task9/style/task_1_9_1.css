@@ -53,6 +53,11 @@ header>div>a{
 header>div>a:hover{
 	color:#EDEDEC;
 }
+
+
+
+
+
 /*2.main body-div*/
 #main-body{
 	position:relative;
@@ -263,6 +268,11 @@ ul[class*="-tab"]>li>a:hover>span,ul[class*="-tab"]>li>a:focus>span{
 	height:48px;
 	opacity:1;
 }
+
+
+
+
+
 /*2-2.right-section*/
 #main-body>section{
 	float:left;
@@ -292,6 +302,11 @@ ul[class*="-tab"]>li>a:hover>span,ul[class*="-tab"]>li>a:focus>span{
 a[id*="list-"]:hover,a[id*="list-"]:focus{
 	color:#6898C2;
 }
+
+
+
+
+
 /*2-2-2.row-1-10*/
 /*2-2-2-1.struction*/
 .row-1-10{
@@ -311,41 +326,55 @@ div[class*="col-1-"]>div,div[class*="col-1-"]>form{
 	border:1px solid #D7D9DA;
 	background:#ffffff;
 }
-.row-1-10>div>form{
-	height:86px;
-}
-#his-search>div{
-	height:64px;
-}
-#count>div{
-	height:100px;
-}
+#query-scope>form{height:86px;}
+#his-search>div{height:64px;}
+#count>div{height:100px;}
+.col-1-4>div,.col-1-6>div{height:356px;}
+/*2-2-2-1-1.2-2-2-(5~8)-h3 and border-radius*/
 .col-1-4>div,.col-1-6>div{
-	height:356px;
+	border-radius:6px;
 }
+.col-1-4>div>h3,.col-1-6>div>h3{
+	display:block;
+	position:relative;
+	width:100%;
+	height:40px;
+	border-top-left-radius:6px;
+	border-top-right-radius:6px;
+	padding-left:20px;
+	font-size:12px;
+	font-family:"黑体";
+	line-height:40px;
+	color:#aaaaaa;
+	background:#F4F5F7;
+}
+
+
+
+
 /*2-2-2-2.form*/
-.row-1-10>div>form{
+#query-scope>form{
 	padding:14px;
 	font-size:12px;
 	font-family:"黑体";
 }
-.row-1-10>div>form>div{
+#query-scope>form>div{
 	float:left;
 	position:relative;
 	height:56px;
 	margin:0 15px;
 }
-#dv-item{width:122px;}
-#dv-buy{width:188px;}
-#dv-data{width:294px;}
-.label-txt{
+#dv-quescope-item{width:122px;}
+#dv-quescope-buy{width:188px;}
+#dv-quescope-data{width:294px;}
+.lab-quescope-txt{
 	display:inline-block;
 	float:left;
 	height:26px;
 	line-height:26px;
 	color:#aaaaaa;
 }
-select[id*="inp-"],#inp-date{
+select[id*="sel-quescope-"],#inp-quescope-date{
 	float:left;
 	height:26px;
 	margin-left:14px;
@@ -360,15 +389,15 @@ select[id*="inp-"],#inp-date{
 }
 /*2-2-2-2-1.form>div*/
 .row-1-10>div>form>div>div{height:26px;}
-.dv-bottom{margin-top:4px;}
-.inp-short{width:70px;}
-.inp-long,#inp-date{width:120px;}
-.label-right{margin-left:14px;}
-#dv-buy{
+.dv-quescope-bottom{margin-top:4px;}
+.sel-quescope-short{width:70px;}
+.sel-quescope-long,#inp-quescope-date{width:120px;}
+.lab-quescope-right{margin-left:14px;}
+#dv-quescope-buy{
 	background:url(../img/post-change.png) no-repeat 158px 9px;
 }
 /*2-2-2-2-2.form-submit*/
-#inp-smit{
+#inp-smit-1{
 	position:relative;
 	width:50px;
 	height:26px;
@@ -383,29 +412,34 @@ select[id*="inp-"],#inp-date{
 	cursor:pointer;
 }
 /*2-2-2-2-3.animotion*/
-.inp-short{
+.sel-quescope-short{
 	background:url(../img/tb-form-1.png) no-repeat 54px 50%;
 }
-.inp-short:hover,.inp-short:focus{
+.sel-quescope-short:hover,.sel-quescope-short:focus{
 	background:url(../img/tb-form-2.png) no-repeat 54px 50%;
 }
-.inp-long{
+.sel-quescope-long{
 	background:url(../img/tb-form-1.png) no-repeat 104px 50%;
 }
-.inp-long:hover,.inp-long:focus{
+.sel-quescope-long:hover,.sel-quescope-long:focus{
 	background:url(../img/tb-form-2.png) no-repeat 104px 50%;
 }
-select[id*="inp-"]:hover,#inp-date:hover,select[id*="inp-"]:focus,#inp-date:focus{
+select[id*="sel-quescope-"]:hover,#inp-quescope-date:hover,select[id*="sel-quescope-"]:focus,#inp-quescope-date:focus{
 	border:2px solid #388AC1;
 }
-#inp-smit{
+#inp-smit-1{
 	transition:color 0.1s linear,background 0.1s linear,border 0.1s linear;
 }
-#inp-smit:hover{
+#inp-smit-1:hover{
 	border:2px solid #388AC1;
 	color:#388AC1;
 	background:#ffffff;
 }
+
+
+
+
+
 /*2-2-2-3.his-search*/
 /*2-2-2-3-1.a[id*="a-"]*/
 #his-search>div{
@@ -420,15 +454,15 @@ a[id*="a-"]{
 	border:1px solid #D7D9DA;
 	background:#ffffff;
 }
-#a-left{
+#a-hisarch-1{
 	width:30px;
 	margin-right:2px;
 }
-#a-right{
+#a-hisarch-2{
 	width:30px;
 	margin:0 2px;
 }
-#a-his{
+#a-hisarch-3{
 	width:132px;
 	margin-left:2px;
 }
@@ -437,9 +471,9 @@ a[id*="a-"]>img{
 	top:50%;
 	transform:translateY(-50%);
 }
-#a-left>img,#a-right>img{left:9px;}
-#a-his>img{left:20px;}
-#a-his>span{
+#a-hisarch-1>img,#a-hisarch-2>img{left:9px;}
+#a-hisarch-3>img{left:20px;}
+#a-hisarch-3>span{
 	display:inline-block;
 	position:absolute;
 	top:50%;
@@ -466,7 +500,7 @@ a[class*="col-2-"]{
 	border:1px solid #D7D9DA;
 	background:#ffffff;
 }
-.sp-time{
+a[class*="col-2-"]>span:nth-child(1){
 	display:inline-block;
 	position:absolute;
 	width:100%;
@@ -478,7 +512,7 @@ a[class*="col-2-"]{
 	color:#666666;
 	text-align:center;
 }
-.sp-number{
+a[class*="col-2-"]>span:nth-child(2){
 	display:inline-block;
 	position:absolute;
 	width:61px;
@@ -494,19 +528,19 @@ a[class*="col-2-"]{
 	background:url(../img/tb-search-4.png) no-repeat 0px 6.5px;
 }
 /*2-2-2-3-3.animotion*/
-#a-left,#a-right{
+#a-hisarch-1,#a-hisarch-2{
 	transition:background 0.1s linear;
 	-webkit-transition:background 0.1s linear;
 }
-#a-left:hover,#a-right:hover{
+#a-hisarch-1:hover,#a-hisarch-2:hover{
 	background:#388AC1;
 }
-#a-his{
+#a-hisarch-3{
 	color:#535353;
 	transition:color 0.1s linear,border 0.1s linear;
 	-webkit-transition:color 0.1s linear,border 0.1s linear;
 }
-#a-his:hover{
+#a-hisarch-3:hover{
 	color:#388AC1;
 	border:2px solid #388AC1;
 }
@@ -517,6 +551,11 @@ a[class*="col-2-"]{
 a[class*="col-2-"]:hover,a[class*="col-2-"]:focus{
 	border-top:4px solid #388AC1;
 }
+
+
+
+
+
 /*2-2-2-4.count*/
 #count>div{
 	background:#EEEDED;
@@ -561,11 +600,11 @@ a[class*="col-2-"]:hover,a[class*="col-2-"]:focus{
 	top:10px;
 	right:10px;
 }
-#dv-green::before,#dv-green::after{background:#43B29E;}
-#dv-blue::before,#dv-blue::after{background:#388AC1;}
-#dv-red::before,#dv-red::after{background:#CF4A36;}
-#dv-yellow::before,#dv-yellow::after{background:#E2CD47;}
-.sp-number-2{
+#count>div>div>div:nth-child(1)::before,#count>div>div>div:nth-child(1)::after{background:#43B29E;}
+#count>div>div>div:nth-child(2)::before,#count>div>div>div:nth-child(2)::after{background:#388AC1;}
+#count>div>div>div:nth-child(3)::before,#count>div>div>div:nth-child(3)::after{background:#CF4A36;}
+#count>div>div>div:nth-child(4)::before,#count>div>div>div:nth-child(4)::after{background:#E2CD47;}
+#count>div>div>div>span:nth-child(1){
 	display:block;
 	float:left;
 	position:absolute;
@@ -577,7 +616,7 @@ a[class*="col-2-"]:hover,a[class*="col-2-"]:focus{
 	line-height:12px;
 	color:#323333;
 }
-.sp-txt{
+#count>div>div>div>span:nth-child(2){
 	display:block;
 	float:left;
 	position:absolute;
@@ -589,25 +628,12 @@ a[class*="col-2-"]:hover,a[class*="col-2-"]:focus{
 	line-height:10px;
 	color:#aaaaaa;
 }
+
+
+
+
+
 /*2-2-2-5.project-table*/
-#project-table>div{
-	border-radius:6px;
-}
-/*2-2-2-5-1.h3*/
-#project-table>div>h3{
-	display:block;
-	position:relative;
-	width:100%;
-	height:40px;
-	border-top-left-radius:6px;
-	border-top-right-radius:6px;
-	padding-left:20px;
-	font-size:12px;
-	font-family:"黑体";
-	line-height:40px;
-	color:#aaaaaa;
-	background:#F4F5F7;
-}
 #project-table>div>div{
 	position:relative;
 	float:left;
@@ -615,7 +641,7 @@ a[class*="col-2-"]:hover,a[class*="col-2-"]:focus{
 	height:274px;
 	margin:20px;
 }
-/*2-2-2-5-2.table-a*/
+/*2-2-2-5-1.table-a*/
 #project-table>div>div>a{
 	display:inline-block;
 	float:left;
@@ -631,11 +657,11 @@ a[class*="col-2-"]:hover,a[class*="col-2-"]:focus{
 	color:#535353;
 	text-align:center;
 }
-#a-two{left:90px;}
-#a-thr{left:180px;}
-#a-for{left:270px;}
-#a-fiv{left:360px;}
-/*2-2-2-5-3.table*/
+#project-table>div>div>a:nth-child(2){left:90px;}
+#project-table>div>div>a:nth-child(3){left:180px;}
+#project-table>div>div>a:nth-child(4){left:270px;}
+#project-table>div>div>a:nth-child(5){left:360px;}
+/*2-2-2-5-2.table*/
 #project-table>div>div>div{
 	position:absolute;
 	float:left;
@@ -647,7 +673,7 @@ a[class*="col-2-"]:hover,a[class*="col-2-"]:focus{
 	border-bottom-left-radius:3px;
 	bottom:0;
 }
-#tab-1{
+#tab-protable-1{
 	position:absolute;
 	width:405px;
 	height:175px;
@@ -656,14 +682,14 @@ a[class*="col-2-"]:hover,a[class*="col-2-"]:focus{
 	top:28px;
 	left:39px;
 }
-#tab-1>tbody>tr>td{
+#tab-protable-1>tbody>tr>td{
 	border:1px solid #DDDDDD;
 	font-size:12px;
 	font-family:"宋体";
 	color:#535353;
 	text-align:center;
 }
-/*2-2-2-5-4.animotion*/
+/*2-2-2-5-3.animotion*/
 #project-table>div>div>a{
 	background:#EDEDF0;
 	border-top:2px solid #EDEDF0;
@@ -687,40 +713,27 @@ a[class*="col-2-"]:hover,a[class*="col-2-"]:focus{
 	border-bottom:2px solid #ffffff;
 	z-index:2;
 }
-#tab-1>tbody>tr>td{
+#tab-protable-1>tbody>tr>td{
 	background:#ffffff;
 	transition:background 0.1s linear;
 	-webkit-transition:background 0.1s linear;
 }
-#tab-1>tbody>tr>td:hover{
+#tab-protable-1>tbody>tr>td:hover{
 	background:#F3F5F6;
 }
+
+
+
+
+
 /*2-2-2-6.pandect*/
-#pandect>div{
-	border-radius:6px;
-}
-/*2-2-2-6-1.h3*/
-#pandect>div>h3{
-	display:block;
-	position:relative;
-	width:100%;
-	height:40px;
-	border-top-left-radius:6px;
-	border-top-right-radius:6px;
-	padding-left:20px;
-	font-size:12px;
-	font-family:"黑体";
-	line-height:40px;
-	color:#aaaaaa;
-	background:#F4F5F7;
-}
-/*2-2-2-6-2.pandect>div>div*/
+/*2-2-2-6-1.pandect>div>div*/
 #pandect>div>div{
 	position:relative;
 	padding-left:17px;
 	padding-top:4px;
 }
-#dv-title{
+#dv-pandect-title{
 	float:left;
 	width:280px;
 	height:44px;
@@ -728,7 +741,7 @@ a[class*="col-2-"]:hover,a[class*="col-2-"]:focus{
 	top:14px;
 	left:34px;
 }
-#dv-price{
+#dv-pandect-price{
 	float:left;
 	width:96px;
 	height:44px;
@@ -736,14 +749,14 @@ a[class*="col-2-"]:hover,a[class*="col-2-"]:focus{
 	top:14px;
 	left:34px;
 }
-#dv-header{
+#dv-pandect-header{
 	float:left;
 	width:184px;
 	height:44px;
 	top:14px;
 	left:34px;
 }
-#dv-describe{
+#dv-pandect-describe{
 	float:left;
 	width:280px;
 	height:146px;
@@ -771,8 +784,8 @@ a[class*="col-2-"]:hover,a[class*="col-2-"]:focus{
 	padding-left:3px;
 	left:34px;
 }
-#inp-agree{visibility:hidden;}
-#lab-agree{
+#inp-pandect-agree{visibility:hidden;}
+#lab-pandect-agree{
 	cursor:pointer;
 	position:absolute;
 	width:14px;
@@ -781,10 +794,10 @@ a[class*="col-2-"]:hover,a[class*="col-2-"]:focus{
 	top:9px;
 	left:3px;
 }
-#lab-agree:hover{
+#lab-pandect-agree:hover{
 	border:1px solid #388AC1;
 }
-#inp-agree:checked + #lab-agree{
+#inp-pandect-agree:checked + #lab-pandect-agree{
 	background:url(../img/tb-pandect-1.png);
 }
 #pandect>div>form>span{
@@ -811,26 +824,13 @@ a[class*="col-2-"]:hover,a[class*="col-2-"]:focus{
 	background:#ffffff;
 	color:#388AC1;
 }
+
+
+
+
+
 /*2-2-2-7.calender*/
-#calender>div{
-	border-radius:6px;
-}
-/*2-2-2-7-1.h3*/
-#calender>div>h3{
-	display:block;
-	position:relative;
-	width:100%;
-	height:40px;
-	border-top-left-radius:6px;
-	border-top-right-radius:6px;
-	padding-left:20px;
-	font-size:12px;
-	font-family:"黑体";
-	line-height:40px;
-	color:#aaaaaa;
-	background:#F4F5F7;
-}
-/*2-2-2-7-2.calender-form*/
+/*2-2-2-7-1.calender-form*/
 #calender>div>form{
 	position:relative;
 	width:310px;
@@ -839,6 +839,214 @@ a[class*="col-2-"]:hover,a[class*="col-2-"]:focus{
 	left:50%;
 	transform:translateX(-50%);
 }
+select[id*="sel-calender-"]{
+	float:left;
+	position:relative;
+	height:22px;
+	border:2px solid #CACBCB;
+	padding-left:4px;
+	appearance:none;
+	-moz-appearance:none;
+	-webkit-appearance:none;
+	font-size:12px;
+	font-family:"黑体";
+	color:#535353;
+	cursor:pointer;
+}
+#sel-calender-year{
+	width:65px;
+	margin-right:5px;
+	background:url(../img/tb-calender-1.png) no-repeat right;
+}
+#sel-calender-month{
+	width:46px;
+	border-left:none;
+	border-right:none;
+	background:url(../img/tb-calender-3.png) no-repeat right;
+}
+#sel-calender-labelday{
+	width:76px;
+	margin-right:5px;
+	background:url(../img/tb-calender-1.png) no-repeat right;
+}
+#calender>div>form>a[id*="a-"]{
+	display:block;
+	float:left;
+	position:relative;
+	width:20px;
+	height:22px;
+	border-top:2px solid #cacbcb;
+	border-bottom:2px solid #cacbcb;
+}
+#a-calender-1{
+	border-left:2px solid #cacbcb;
+	background:url(../img/tb-calender-2.png) no-repeat;
+}
+#a-calender-2{
+	margin-right:5px;
+	border-right:2px solid #cacbcb;
+	background:url(../img/tb-calender-4.png) no-repeat;
+}
+#inp-smit-3{
+	display:block;
+	width:65px;
+	height:22px;
+	border:2px solid #CACBCB;
+	background:#ffffff;
+	font-size:12px;
+	font-family:"黑体";
+	color:#535353;
+	cursor:pointer;
+}
+/*2-2-2-7-2.calender-table*/
 #calender>div>table{
 	position:relative;
+	width:310px;
+	border-top:2px solid #A9CFEC;
+	left:50%;
+	transform:translateX(-50%);
+	border-collapse:collapse;
+}
+#calender>div>table>tbody>tr:nth-child(1){
+	height:31px;
+}
+#calender>div>table>tbody>tr:nth-child(1)>th{
+	border-bottom:2px solid #E1E1E2;
+}
+#calender>div>table>tbody>tr>td{
+	width:42px;
+	height:42px;
+	border:1px solid transparent;
+}
+#calender>div>table>tbody>tr>td>a{
+	display:block;
+	width:100%;
+	height:100%;
+}
+#calender>div>table>tbody>tr>td>a>span{
+	display:block;
+	position:relative;
+	width:100%;
+	top:14%;
+	font-size:11.36px;
+	font-family:"黑体";
+	text-align:center;
+}
+.workday,.festival>span:nth-child(1),.weekend>span:nth-child(2){color:#323333;}
+.festival>span:nth-child(2),.weekend>span:nth-child(1){color:#c9161d;}
+.labelday{border:2px solid #F4C21D;}
+.no-labelday{border:2px solid transparent;}
+/*2-2-2-7-3.animotion*/
+#sel-calender-year:hover,#sel-calender-labelday:hover,#sel-calender-year:focus,#sel-calender-labelday:focus{
+	border:2px solid #388AC1;
+}
+#calender>div>form>a[id*="a-"]:hover,#calender>div>form>a[id*="a-"]:focus,#sel-calender-month:hover,#sel-calender-month:focus{
+	border-top:2px solid #388AC1;
+	border-bottom:2px solid #388AC1;
+}
+#a-calender-1:hover,#a-calender-1:focus{
+	border-left:2px solid #388AC1;
+}
+#a-calender-2:hover,#a-calender-2:focus{
+	border-right:2px solid #388AC1;
+}
+#inp-smit-3{
+	transition:color 0.1s linear,background 0.1s linear,border 0.1s linear;
+	-webkit-transition:color 0.1s linear,background 0.1s linear,border 0.1s linear;
+}
+#inp-smit-3:hover{
+	border:2px solid #388AC1;
+	color:#ffffff;
+	background:#388AC1;
+}
+#calender>div>table>tbody>tr>td>a{
+	transition:border 0.1s linear;
+	-webkit-transition:border 0.1s linear;
+}
+#calender>div>table>tbody>tr>td>a:hover{
+	border:2px solid #F4C21D;
+}
+
+
+
+
+
+/*2-2-2-8.car-list*/
+/*2-2-2-8-1.car-list-table*/
+#car-list>div>table{
+	position:relative;
+	width:450px;
+	margin-top:18px;
+	border:2px solid #CACBCB;
+	border-bottom:none;
+	left:50%;
+	transform:translateX(-50%);
+	border-collapse:collapse;
+}
+#car-list>div>table th,td{border:2px solid #CACBCB;}
+#tr-last-ranking>td{border-bottom:none;}
+#car-list>div>table th{
+	height:26px;
+	font-size:13px;
+	font-family:"黑体";
+	color:#231815;
+}
+#car-list>div>table td{
+	position:relative;
+	height:24px;
+	font-size:12px;
+	font-family:"黑体";
+	color:#323333;
+}
+#car-list>div>table>tbody>tr>td:nth-child(1),#car-list>div>table>tbody>tr>th:nth-child(1){
+	width:65px;
+	text-align:center;
+}
+#car-list>div>table>tbody>tr>td:nth-child(2),#car-list>div>table>tbody>tr>th:nth-child(2){
+	width:89px;
+	text-align:center;
+}
+#car-list>div>table>tbody>tr>td:nth-child(3),#car-list>div>table>tbody>tr>th:nth-child(3){
+	text-align:left;
+}
+#car-list>div>table>tbody>tr>td:nth-child(3){
+	padding-left:35px;
+}
+#car-list>div>table>tbody>tr>th:nth-child(3){
+	padding-left:29px;
+}
+#car-list>div>table>tbody>tr>td:nth-child(3)>div{
+	position:absolute;
+	width:168px;
+	height:4px;
+	top:50%;
+	right:18px;
+	transform:translateY(-50%);
+	background:#DCDCDC;
+}
+#car-list>div>table>tbody>tr>td:nth-child(3)>div::before{
+	content:'';
+	position:absolute;
+	height:4px;
+	top:0;
+	left:0;
+}
+#volkswagen-car-1>div::before{width:84.52381%;}
+#toyota-car-2>div::before{width:50.653292%;}
+#audi-car-3>div::before{width:39.986145%;}
+#honda-car-ranking>div::before{width:39.548067%;}
+#ford-car-ranking>div::before{width:38.579008%;}
+#bmw-car-ranking>div::before{width:37.057063%;}
+#hyunda-car-ranking>div::before{width:34.760259%;}
+#kia-car-ranking>div::before{width:33.268726%;}
+#benz-car-ranking>div::before{width:33.132478%;}
+#buick-car-ranking>div::before{width:32.045835%;}
+#car-list>div>table>tbody>tr:nth-child(2)>td:nth-child(3)>div::before{background:#ED6E52;}
+#car-list>div>table>tbody>tr:nth-child(3)>td:nth-child(3)>div::before{background:#EF8150;}
+#car-list>div>table>tbody>tr:nth-child(4)>td:nth-child(3)>div::before{background:#F29F4F;}
+td[id*="-car-ranking"]>div::before{background:#7ECAF0;}
+/*2-2-2-8-2.animotion*/
+#car-list>div>table>tbody>tr:hover{
+	cursor:pointer;
+	background:#F4F5F6;
 }
