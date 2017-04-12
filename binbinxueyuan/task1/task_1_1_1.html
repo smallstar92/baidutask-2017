@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Task_1_1_1</title>
+</head>
+<body>
+	<label>你想写点什么吗：<input id="aqi-input" type="text"></label>
+	<button id="button">确认填写</button>
+	<div>您输入的值是：<span id="aqi-display">尚无录入</span></div>
+	<script type="text/javascript">
+		(function() {
+			/*    
+			在注释下方写下代码
+			给按钮button绑定一个点击事件
+			在事件处理函数中
+			获取aqi-input输入的值，并显示在aqi-display中
+			*/
+			/*获取button按钮*/
+			var butOne=document.getElementById('button');
+			/*获取aqi-inut输入的值*/
+			var txt=document.getElementById('aqi-input').value;
+			/*绑定点击事件*/
+			butOne.onclick=function(){
+				/*将txt传入aqi-dsplay*/
+				document.getElementById('aqi-display').innerHTML=txt;
+			};
+		})();
+	</script>
+</body>
+</html>
