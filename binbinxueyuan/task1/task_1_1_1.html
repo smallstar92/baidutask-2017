@@ -10,20 +10,16 @@
 	<div>您输入的值是：<span id="aqi-display">尚无录入</span></div>
 	<script type="text/javascript">
 		(function() {
-			/*    
-			在注释下方写下代码
-			给按钮button绑定一个点击事件
-			在事件处理函数中
-			获取aqi-input输入的值，并显示在aqi-display中
-			*/
 			/*获取button按钮*/
 			var butOne=document.getElementById('button');
-			/*获取aqi-inut输入的值*/
-			var txt=document.getElementById('aqi-input').value;
 			/*绑定点击事件*/
 			butOne.onclick=function(){
-				/*将txt传入aqi-dsplay*/
+				/*获取aqi-inut输入的值*/
+				var txt=document.getElementById('aqi-input').value;
+				/*将txt传入aqi-dsplay,使用if语句判定两个值是否相等*/
+				if (document.getElementById('aqi-display').innerHTML!=txt) {
 				document.getElementById('aqi-display').innerHTML=txt;
+				}
 			};
 		})();
 	</script>
