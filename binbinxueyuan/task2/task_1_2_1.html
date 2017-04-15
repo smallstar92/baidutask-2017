@@ -10,37 +10,43 @@
 	<ul id="sco-list-2"></ul>
 	<script type="text/javascript">
 		var scoData=[
-			["郭靖",82],
-			["杨过",53],
-			["张无忌",85],
-			["段誉",100],
-			["萧峰",90],
-			["虚竹",83],
-			["令狐冲",75],
-			["韦小宝",30]
+			["郭靖", 82],
+			["杨过", 53],
+			["张无忌", 85],
+			["段誉", 100],
+			["萧峰", 90],
+			["虚竹", 83],
+			["令狐冲", 75],
+			["韦小宝", 30]
 		];
 		(function() {
-			var scoList=document.getElementById("soc-list-1");
-		//	var scoList2=document.getElementById("soc-list-2");
-			var aho=scoData.filter(function(arr){return arr[1]>60;});
-			//var b=scoData.filter(function(arr2){return arr2[1]<60});
-			aho.sort(function(numa,numb){
-				return numa[1]-numb[1];
+			//获取两个ul列表；
+			var scoList1=document.getElementById('sco-list-1');
+			var scoList2=document.getElementById('sco-list-2');
+			//使用数组的filter方法分别取值大于60和小于60的数据；
+			var betterList=scoData.filter(function(arr1){return arr1[1]>=60;});
+			var badList=scoData.filter(function(arr2){return arr2[1]<60;});
+			//使用数组的sort方法对两个数组的数据排序；
+			betterList.sort(function(numa,numb){
+				return numb[1]-numa[1];
 			});
-			/*b.sort(function(num3,num4){
-				return num3[1]-num4[1];
-			});*/
+			badList.sort(function(numc,numd){
+				return numd[1]-numc[1];
+			});
+			//利用for循环语句遍历数组，对每组数组分别建立li并放进ul中；
 			(function wirte(){
-				for(var i=0;i<aho.length;i++) {
+				for(var i=0;i<betterList.length;i++) {
 					var li=document.createElement('li');
-					scoList.append(li);
-					li.innerHTML=aho[i];
+					scoList1.append(li);
+					li.innerHTML=betterList[i];
 				}
-				/*for (var j = 0; j < b.length; j++) {
-					var li=document.createElementById('li');
-					li.innerHTML=b[j];
+			})();
+			(function wirte(){
+				for(var i=0;i<badList.length;i++) {
+					var li=document.createElement('li');
 					scoList2.append(li);
-				}*/
+					li.innerHTML=badList[i];
+				}
 			})();
 		})();
 	</script>
