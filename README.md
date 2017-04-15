@@ -99,7 +99,7 @@ demo代码：http://github.com/smallstar92/baidutask-2017/tree/gh-pages/xiaoweix
 完成效果：通过完成本任务，初步对flex伸缩盒进行了学习。了解其一些常用属性的使用方法<br>
 demo：http://smallstarz.com/baidutask-2017/xiaoweixueyuan/task10/task_1_10_1.html;<br>
 demo代码：http://github.com/smallstar92/baidutask-2017/tree/gh-pages/xiaoweixueyuan/task10;<br>
-#以上，对task4-9的小结请见笔记，对flex盒子的学习笔记请见：
+#以上，对task4-9的小结请见笔记，对flex盒子的学习笔记请见：<br>
 task4-9：http://smallstarz.com/2017/04/10/baidu2017-xiaoweixueyuan5to10-html-css/;<br>
 task10flex盒子：<br>
 
