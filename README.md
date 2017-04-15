@@ -32,7 +32,7 @@ demo代码：https://github.com/smallstar92/baidutask-2017/tree/gh-pages/nuomi-t
 
 
 
-># task1-9：小薇学院基础任务1-9
+># task1-10：小薇学院基础任务1-10
 
 任务描述：<br/>
 小薇学院主要是通过练习一些基础任务，达到巩固html/css基础的目的。学院的任务主要来自百度前端技术学院2016，
@@ -80,11 +80,12 @@ demo代码：http://github.com/smallstar92/baidutask-2017/tree/gh-pages/xiaoweix
 此外，在过程中也发现几处之前不曾注意会出现误差的细节，并且，感觉需要对css选择器的优化进行学习。<br>
 demo：http://smallstarz.com/baidutask-2017/xiaoweixueyuan/task7/task_1_7_1.html;<br>
 demo代码：http://github.com/smallstar92/baidutask-2017/tree/gh-pages/xiaoweixueyuan/task7;<br>
-#任务七：实现常见的技术产品官网的页面架构及样式布局<br/>
+#任务八：实现常见的技术产品官网的页面架构及样式布局<br/>
 完成时间：2017-4-4。<br/>
 完成效果：通过完成本任务，了解栅格化布局，主要使用到@media，此外，对bootstrap使用栅格化的原理进行了了解。<br>
 demo：http://smallstarz.com/baidutask-2017/xiaoweixueyuan/task8/task_1_8_1.html;<br>
 demo代码：http://github.com/smallstar92/baidutask-2017/tree/gh-pages/xiaoweixueyuan/task8;<br>
+#任务九：使用HTML/CSS实现一个复杂页面<br/>
 完成时间：2017-4-9。<br/>
 完成效果：通过完成本任务，主要是对html和css进行了综合使用。该页面较复杂，使用到ul（ul的嵌套），table表格（table与其内部tr/td/th等的样式设置），
 form表单（表单内select/label/input等元素的样式设置）等元素。在完成过程中，对右边的主体部分采用了上个任务中学习到的栅格化布局思想；
@@ -93,3 +94,26 @@ form表单（表单内select/label/input等元素的样式设置）等元素。�
 对右侧主体几大块区域的元素设置类名的时候，也重新进行了系统化，避免类名太多以致查找困难，设置重复<br>
 demo：http://smallstarz.com/baidutask-2017/xiaoweixueyuan/task9/task_1_9_1.html;<br>
 demo代码：http://github.com/smallstar92/baidutask-2017/tree/gh-pages/xiaoweixueyuan/task9;<br>
+#任务十：Flexbox 布局练习<br/>
+完成时间：2017-4-10。<br/>
+完成效果：通过完成本任务，初步对flex伸缩盒进行了学习。了解其一些常用属性的使用方法<br>
+demo：http://smallstarz.com/baidutask-2017/xiaoweixueyuan/task10/task_1_10_1.html;<br>
+demo代码：http://github.com/smallstar92/baidutask-2017/tree/gh-pages/xiaoweixueyuan/task10;<br>
+#以上，对task4-9的小结请见笔记，对flex盒子的学习笔记请见：
+task4-9：http://smallstarz.com/2017/04/10/baidu2017-xiaoweixueyuan5to10-html-css/;<br>
+task10flex盒子：<br>
+
+># task11-12：斌斌学院基础任务1-2
+
+任务描述：<br/>
+彬彬学院主要是通过练习一些基础任务，对js的基础知识进行学习。<br/>
+#任务一：零基础JavaScript编码（一）<br/>
+完成时间：2017-4-13。<br/>
+完成效果：对js基本语法，事件及DOM原理进行学习，任务涉及鼠标点击事件以及一个简单的函数。<br/>
+demo：http://smallstarz.com/baidutask-2017/binbinxueyuan/task1/task_1_1_1.html;<br/>
+demo代码：http://github.com/smallstar92/baidutask-2017/tree/gh-pages/binbinxueyuan/task1;<br/>
+#任务二：零基础JavaScript编码（二）<br/>
+完成时间：2017-4-15。<br/>
+完成效果：本任务涉及的是数组的知识，在任务中使用到filter()，sort()方法，在完成任务过程中对数组的各种方法也进行了学习。<br/>
+demo：http://smallstarz.com/baidutask-2017/binbinxueyuan/task2/task_1_2_1.html;<br/>
+demo代码：http://github.com/smallstar92/baidutask-2017/tree/gh-pages/binbinxueyuan/task2;<br/>
