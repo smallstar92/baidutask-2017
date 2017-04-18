@@ -7,12 +7,11 @@ function getData() {
 	var dataFrom = document.getElementById("source").getElementsByTagName("li");
 	var data=new Array();
 	for (var i = 0; i < dataFrom.length; i++) {
-		if (dataFrom[i].innerText.slice(2,3)=="成"){
-			var name = dataFrom[i].innerText.slice(0,2);
-			var score = parseInt(dataFrom[i].getElementsByTagName("b")[0].innerHTML);
+		var score = parseInt(dataFrom[i].innerHTML.slice(-6,-4));
+		if (dataFrom[i].innerHTML.slice(2,3)=="成"){
+			var name = dataFrom[i].innerHTML.slice(0,2);
 		}else{
-			var name = dataFrom[i].innerText.slice(0,3);
-			var score = parseInt(dataFrom[i].getElementsByTagName("b")[0].innerHTML);
+			var name = dataFrom[i].innerHTML.slice(0,3);
 		}
 		data.push([name,score]);
 	}
