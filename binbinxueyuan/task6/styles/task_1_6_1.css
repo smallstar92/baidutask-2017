@@ -1,0 +1,90 @@
+﻿*{margin: 0;padding: 0;box-sizing: border-box;}
+
+/*1.form*/
+form{
+	width: 100%;
+	margin-top: 10px;
+	overflow: hidden;
+}
+#inp-search,#txt{
+	display: inline-block;
+	position: relative;
+	border: 2px solid #ECECEC;
+	border-radius: 3px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 12px;
+	line-height: 24px;
+	text-align: center;
+	transition: border 0.1s linear;
+	-webkit-transition: border 0.1s linear;
+}
+#txt{
+	width: 400px;
+	height: 120px;
+}
+#inp-search{
+	width:150px;
+	height:24px;
+	margin-top: 40px;
+}
+#inp-search:hover,#inp-search:focus,#txt:hover,#txt:focus{
+	border: 2px solid #FE0102;
+}
+button[id*="-"],#search{
+	display: block;
+	position: relative;
+	width: 150px;
+	height: 24px;
+	margin-top: 10px;
+	border: 2px solid #FE0102;
+	border-radius: 3px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 12px;
+	font-family: "宋体";
+	line-height: 20px;
+	background: #FFFFFF;
+	color: #FE0102;
+	transition: color 0.1s linear, background 0.1s linear;
+	-webkit-transition: color 0.1s linear, background 0.1s linear;
+	cursor: pointer;
+}
+#right-in{
+	margin-bottom: 20px;
+}
+button[id*="-"]:hover,#search:hover{
+	background: #FE0102;
+	color: #FFFFFF;
+}
+
+
+/*2.div*/
+#dv-number{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	position: relative;
+	width: 100%;
+	margin-top: 20px;
+	overflow: hidden;
+}
+.number{
+	display: inline-block;
+	height: 50px;
+	margin:5px 5px;
+	border: 2px solid #FE0102;
+	border-radius: 3px;
+	padding: 0 15px;
+	font-size: 30px;
+	line-height: 46px;
+	background: #FE0102;
+	color: #FFFFFF;
+	transition: color 0.1s linear, background 0.1s linear;
+	-webkit-transition: color 0.1s linear, background 0.1s linear;
+	cursor: pointer;
+}
+.number:hover{
+	background: #FFFFFF;
+	color: #FE0102;
+}
