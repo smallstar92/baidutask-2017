@@ -60,7 +60,7 @@ button[id*="-"]:hover,#search:hover{
 
 
 /*2.div*/
-#dv-number{
+#dv-txt{
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
