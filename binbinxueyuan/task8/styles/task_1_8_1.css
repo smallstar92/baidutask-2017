@@ -11,8 +11,8 @@
   top: 50px;
   left: 50%;
   transform: translateX(-50%);
-  width: 50%;
-  height: 150px;
+  width: 95%;
+  overflow: hidden;
 }
 div{
   display: flex;
@@ -20,10 +20,12 @@ div{
   justify-content: space-around;
   align-items: center;
   background: #fff;
-  width: 45%;
+  margin: 5px;
+  padding: 5px;
   height: 80%;
   border: 3px solid #000;
   border-radius: 4px;
+  color: #000;
 }
 
 /*2.set form style*/
@@ -31,6 +33,7 @@ form{
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  align-items: center;
   float: left;
   position: relative;
   top: 70px;
@@ -54,4 +57,9 @@ button[id*="btn-"]{
 button[id*="btn-"]:hover,button[id*="btn-"]:focus{
   color: #fff;
   background: #b0e11e;
+}
+#inp-search{
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding-left: 12px;
 }

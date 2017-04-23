@@ -24,7 +24,7 @@ function showerg(){
         rankarr[i].style.background = "#b0e11e";
         previous = rankarr[i];
       }
-    }(i),i*1000)
+    }(i),i*500)
   }
 }
 //4.前序遍历
