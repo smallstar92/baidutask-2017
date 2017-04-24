@@ -92,25 +92,30 @@ function searchSp(){
 function timeR(){
   var i = 0;
   var abc = rankarr[i];
-  var timer = setInterval(function(){
-    if (i < rankarr.length) {
-      rankarr[rankarr.length-1].style.background = "#fff";
-      rankarr[rankarr.length-1].style.color = "#000";
-      if (i-1>-1) {
+  if (document.getElementById("inp-search").value=="") {
+    alert("请输入查询内容");
+    boole = false;
+  } else {
+    var timer = setInterval(function(){
+      if (i < rankarr.length) {
+        rankarr[rankarr.length-1].style.background = "#fff";
+        rankarr[rankarr.length-1].style.color = "#000";
+        if (i-1>-1) {
+          rankarr[i-1].style.background = "#fff";
+          rankarr[i-1].style.color = "#000";
+        }
+        rankarr[i].style.background = "#b0e11e";
+        rankarr[i].style.color = "#fff";
+        i++;
+      } else {
+        boole = false;
         rankarr[i-1].style.background = "#fff";
         rankarr[i-1].style.color = "#000";
+        clearInterval(timer);
+        searchTo();
       }
-      rankarr[i].style.background = "#b0e11e";
-      rankarr[i].style.color = "#fff";
-      i++;
-    } else {
-      boole = false;
-      rankarr[i-1].style.background = "#fff";
-      rankarr[i-1].style.color = "#000";
-      clearInterval(timer);
-      searchTo();
-    }
-  },100);
+    },100);
+  }
 }
 //9.设置模糊查询。
 function searchTo(){
@@ -125,15 +130,11 @@ function searchTo(){
       childB.push(childA[j]);
       }
     }
-    if (document.getElementById("inp-search").value=="") {
-      alert("请输入查询内容");
-    } else {
-      for (var k = 0; k < childB.length; k++) {
-        if (childB[k].nodeType == "3"&&childB[k]!=null&&childB[k].nodeValue.indexOf(document.getElementById("inp-search").value)>-1) {
-          rankarr[i].style.background = "#b0e11e";
-          rankarr[i].style.color = "#fff";
-          childC.push(rankarr[i]);
-        }
+    for (var k = 0; k < childB.length; k++) {
+      if (childB[k].nodeType == "3"&&childB[k]!=null&&childB[k].nodeValue.indexOf(document.getElementById("inp-search").value)>-1) {
+        rankarr[i].style.background = "#b0e11e";
+        rankarr[i].style.color = "#fff";
+        childC.push(rankarr[i]);
       }
     }
   }
