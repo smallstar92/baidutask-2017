@@ -139,9 +139,9 @@ function searchTo(){
     }
   }
   if (childC.length == 0) {
-    alert("未找到有相似内容元素");
+    alert("未找到相似内容");
   } else {
-    alert("找到"+childC.length+"有相似内容的元素，已标记")
+    alert("找到"+childC.length+"个相似内容，已标记所在区域")
   }
 }
 window.onload = function(){
