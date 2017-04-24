@@ -64,3 +64,6 @@ button[id*="btn-"]:hover,button[id*="btn-"]:focus{
   border-radius: 5px;
   padding-left: 12px;
 }
+.select{
+  background: #b0e11e;
+}
