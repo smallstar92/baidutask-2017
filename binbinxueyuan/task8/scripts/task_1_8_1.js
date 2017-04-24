@@ -27,7 +27,7 @@ function showerg(){
         rankarr[i].style.color = "#fff";
         previous = rankarr[i];
       }
-    }(i),i*500)
+    }(i),i*200)
   }
 }
 //4.前序遍历
@@ -75,8 +75,8 @@ function btnBehi(){
     }
   }
 }
-//7.查询
-/*function searchSp(){
+//7.查询按钮
+function searchSp(){
   var searchsp = document.getElementById("btn-search");
   searchsp.onclick = function(e){
     e.preventDefault();
@@ -84,122 +84,63 @@ function btnBehi(){
       boole = true;
       initialize();
       befoerg(show);
-      for (var i = 0; i < rankarr.length; i++) {
-        setTimeout(function(i){
-          return function(){
-            if(i == rankarr.length-1){
-              boole = false;
-            }
-            if(previous){
-              previous.style.background = "#fff";
-              previous.style.color = "#000";
-              var childA = previous.childNodes;
-              var childB = null;
-              try{
-                  childB = Array.prototype.slice.call(childA,0);
-              }catch(ex){
-                  childB = new Array();
-                  for(var m = 0;m < childA.length;m++) {
-                      childB.push(childA[m]);
-                  }
-              }
-              for (var j = 0; j < childB.length; j++) {
-                if (childB[j].nodeName == "#text" && !/\s/.test(childB[j].nodeValue)) {
-                  childB.splice(j,1);
-                }
-              }
-              for (var k = 0; k < childB.length; k++) {
-                if (childB[k].nodeName == "#text") {
-                  var lengthtxt = document.getElementById("inp-search").value.toString().length;
-                  var lengthdvk = childB[k].toString().length;
-                  if (lengthdvk < lengthtxt) {
-                    previous.style.border = "2px solid #b0e11e";
-                    continue;
-                  } else if (lengthdvk == lengthtxt) {
-                    if (document.getElementById("inp-search").value.toString() == childB[k].toString()){
-                      previous.style.background = "#b0e11e";
-                      previous.style.color = "#fff";
-                      previous.style.border = "2px solid #b0e11e";
-                      break;
-                    } else {
-                      continue;
-                    }
-                  } else {
-                    var numb = lengthdvk - lengthtxt + 1;
-                    for (var l = 0; l < numb; l++) {
-                      if (document.getElementById("inp-search").value.toString() == childB[k].toString().slice(l,l+lengthtxt)) {
-                        previous.style.background = "#b0e11e";
-                        previous.style.color = "#fff";
-                        previous.style.border = "2px solid #b0e11e";
-                        break;
-                      } else {
-                        continue;
-                      }
-                    }
-                  }
-                }
-              }
-            }
-            rankarr[i].style.background = "#b0e11e";
-            rankarr[i].style.color = "#fff";
-            previous = rankarr[i];
-          }
-        }(i),i*500)
-      }
+      timeR();
     }
   }
-}*/
-
+}
+//8.使用setInterval显示遍历效果
+function timeR(){
+  var i = 0;
+  var abc = rankarr[i];
+  var timer = setInterval(function(){
+    if (i < rankarr.length) {
+      rankarr[rankarr.length-1].style.background = "#fff";
+      rankarr[rankarr.length-1].style.color = "#000";
+      if (i-1>-1) {
+        rankarr[i-1].style.background = "#fff";
+        rankarr[i-1].style.color = "#000";
+      }
+      rankarr[i].style.background = "#b0e11e";
+      rankarr[i].style.color = "#fff";
+      i++;
+    } else {
+      boole = false;
+      rankarr[i-1].style.background = "#fff";
+      rankarr[i-1].style.color = "#000";
+      clearInterval(timer);
+      searchTo();
+    }
+  },100);
+}
+//9.设置模糊查询。
 function searchTo(){
+  var childC = new Array();
   for (var i = 0; i < rankarr.length; i++) {
     var childA = rankarr[i].childNodes;
     var childB = null;
     try{
       childB = Array.prototype.slice.call(childA,0);
     }catch(ex){
-      childB = new Array();
       for(var j = 0;j < childA.length;j++) {
       childB.push(childA[j]);
       }
     }
-    for (var k = 0; k < childB.length; k++) {
-      if (childB[k].nodeName == "#text") {
-        var lengthtxt = document.getElementById("inp-search").value.toString().length;
-        var lengthdvk = childB[k].toString().length;
-        if (lengthdvk < lengthtxt) {
-          rankarr[i].style.border = "2px solid #b0e11e";
-          continue;
-        } else if (lengthdvk == lengthtxt) {
-          if (document.getElementById("inp-search").value.toString() == childB[k].toString()){
-            rankarr[i].style.background = "#b0e11e";
-            rankarr[i].style.color = "#fff";
-            rankarr[i].style.border = "2px solid #b0e11e";
-            break;
-          } else {
-            continue;
-          }
-        } else {
-          var numb = lengthdvk - lengthtxt + 1;
-          for (var l = 0; l < numb; l++) {
-            if (document.getElementById("inp-search").value.toString() == childB[k].toString().slice(l,l+lengthtxt)) {
-              rankarr[i].style.background = "#b0e11e";
-              rankarr[i].style.color = "#fff";
-              rankarr[i].style.border = "2px solid #b0e11e";
-              break;
-            } else {
-              continue;
-            }
-          }
+    if (document.getElementById("inp-search").value=="") {
+      alert("请输入查询内容");
+    } else {
+      for (var k = 0; k < childB.length; k++) {
+        if (childB[k].nodeType == "3"&&childB[k]!=null&&childB[k].nodeValue.indexOf(document.getElementById("inp-search").value)>-1) {
+          rankarr[i].style.background = "#b0e11e";
+          rankarr[i].style.color = "#fff";
+          childC.push(rankarr[i]);
         }
       }
     }
   }
-}
-function searchSp(){
-  var searchsp = document.getElementById("btn-search");
-  searchsp.onclick = function(e){
-    e.preventDefault();
-    searchTo();
+  if (childC.length == 0) {
+    alert("未找到有相似内容元素");
+  } else {
+    alert("找到"+childC.length+"有相似内容的元素，已标记")
   }
 }
 window.onload = function(){
