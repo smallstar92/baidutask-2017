@@ -92,6 +92,7 @@ function btnDelete(){
         e.remove(this);
       }
     })
+    dvAct();
   }
 }
 /*
@@ -111,6 +112,7 @@ function btnadd(){
         e.appendChild(newdiv);
       }
     })
+    dvAct();
   }
 }
 
@@ -146,20 +148,20 @@ function behierg(node){
 */
 function showerg(){
   for (var i = 0; i < rankarr.length; i++) {
-    setTimeout(function(i){
-      return function(){
-        if(i == rankarr.length-1){
-          boole = false;
-        }
-        if(previous){//如果存在previous,对其初始化;
-          previous.style.background = "#fff";
-          previous.style.color = "#000";
-        }
-        rankarr[i].style.background = "#b0e11e";
-        rankarr[i].style.color = "#fff";
-        previous = rankarr[i];//将本次遍历的元素赋值给previous,在下次遍历时对其进行初始化;
-      }
-    }(i),i*200)
+    (function(i){
+      setTimeout(function(){
+          if(i == rankarr.length-1){
+            boole = false;
+          }
+          if(previous){//如果存在previous,对其初始化;
+            previous.style.background = "#fff";
+            previous.style.color = "#000";
+          }
+          rankarr[i].style.background = "#b0e11e";
+          rankarr[i].style.color = "#fff";
+          previous = rankarr[i];//将本次遍历的元素赋值给previous,在下次遍历时对其进行初始化;
+      },i*200)
+    })(i);
   }
 }
 /*
