@@ -1,0 +1,46 @@
+* {
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+#txt-name {
+  top: 2px;
+  font-size: 14px;
+}
+#user-name {
+  top: 2px;
+  left: 2px;
+  border: 2px solid #aaa;
+  border-radius: 3px;
+}
+#user-name:valid {
+	border: 2px solid green;
+}
+#user-name:invalid {
+	border: 2px solid red;
+}
+#btn {
+  left: 3px;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+  font-weight: bold;
+  color: #fff;
+  background: blue;
+  border: 2px solid blue;
+  border-radius: 3px;
+  -webkit-transition: color 0.1s linear, background 0.1s linear;
+}
+#btn:hover {
+  color: blue;
+  background: #fff;
+}
+#txt-checked {
+  top:20px;
+  left: -212px;
+  display: block;
+  font-size: 14px;
+  color: #aaa;
+}
