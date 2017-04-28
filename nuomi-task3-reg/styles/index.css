@@ -1,0 +1,57 @@
+* {
+  /*float: left;*/
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+.form {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  position: relative; 
+  margin: 5px 0;
+}
+.txt {
+  margin: 0 5px;
+  font-size: 14px;
+}
+#mbphone,
+#word {
+  margin: 0 5px;
+  border: 2px solid #aaa;
+  border-radius: 3px;
+}
+#mbphone:valid,
+#word:valid {
+	border: 2px solid green;
+}
+#mbphone:invalid,
+#word:invalid {
+	border: 2px solid red;
+}
+#btn-phone,
+#btn-word {
+  display: block;
+  width: 50px;
+  height: 24px;
+  margin: 0 5px;
+  border: 2px solid blue;
+  border-radius: 3px;
+  font-weight: bold;
+  color: #fff;
+  background: blue;
+  -webkit-transition: color 0.1s linear, background 0.1s linear;
+}
+#btn-phone:hover,
+#btn-word:hover {
+  color: blue;
+  background: #fff;
+  cursor: pointer;
+}
+#mbphone-checked,
+#word-checked {
+  display: block;
+  font-size: 12px;
+  color: #aaa;
+}
