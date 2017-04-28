@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles/task_1_2_1.css">
+  <title>task_1_2_1</title>
+</head>
+<body>
+  <form action="###" class="form" method="post" onsubmit="return validate_form()">
+    <label class="lab">名称</label>
+    <input type="text" class="input" name="name">
+    <span class="txt">必填，长度为4~16个字符</span>
+    <label class="lab">密码</label>
+    <input type="password" class="input" name="password">
+    <span class="txt">必填，长度为4~9个字符，英文字母和数字组合</span>
+    <label class="lab">密码确认</label>
+    <input type="password" class="input" name="passwordagain">
+    <span class="txt">请再次输入相同密码</span>
+    <label class="lab">邮箱</label>
+    <input type="email" class="input" name="email">
+    <span class="txt">必填，可使用qq、163、outlook邮箱</span>
+    <label class="lab">手机</label>
+    <input type="text" class="input" name="phone">
+    <span class="txt">选填,11位手机号码</span>
+    <input type="submit" id="submit" value="提交" name="submit">
+  </form>
+  <script src="scripts/task_1_2_1.js"></script>
+</body>
+</html>
