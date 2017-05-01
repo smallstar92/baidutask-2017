@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*1.表格*/
+.table {
+  float: left;
+  position: relative;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 301px;
+  height: 301px;
+  border-collapse: collapse;
+}
+td {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #bbb;
+  text-align: center;
+}
+#row {
+  display: flex;
+  position: absolute;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+#row>span {
+  display: block;
+  width: 30px;
+}
+#col {
+  display: flex;
+  position: absolute;
+  flex-flow: column wrap;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-172px);
+  text-align: center;
+}
+#col>span {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+}
+/*2.命令表单*/
+form {
+  float: left;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 330px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 340px;
+  height: 40px;
+}
+input {
+  height: 25px;
+  margin: 0 5px;
+  border: 2px solid #b0e11e;
+  border-radius: 4px;
+}
+#order {
+  padding-left: 5px;
+  font-weight: bold;
+}
+#submit {
+  width: 50px;
+  font-weight: bold;
+  color: #000;
+  background: #fff;
+  -webkit-transition: color 0.1s linear, background 0.1s linear;
+          transition: color 0.1s linear, background 0.1s linear;
+}
+#submit:hover {
+  color: #fff;
+  background: #b0e11e;
+}
+/*3.小方框属性*/
+#wrap {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 301px;
+  height: 301px;
+}
+#block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 31px;
+  height: 31px;
+  transform: rotate(0deg);
+  transition: all 0.1s linear;
+}
+#block::before {
+  content: '';
+  float: left;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background: #b0e11e;
+}
+#block::after {
+  content: '';
+  float: left;
+  display: block;
+  right: 0;
+  bottom: 0;
+  width: 30%;
+  height: 100%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: #aa0;
+}
+/*4.规则*/
+p {
+  float: left;
+  position: absolute;
+  top: 370px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  font-weight: bold;
+}
