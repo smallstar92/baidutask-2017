@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*1.表格*/
+.table {
+  float: left;
+  position: relative;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 340px;
+  height: 340px;
+}
+td {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #bbb;
+  text-align: center;
+}
+/*2.命令表单*/
+form {
+  float: left;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 370px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 340px;
+  height: 40px;
+}
+input {
+  height: 25px;
+  margin: 0 5px;
+  border: 2px solid #b0e11e;
+  border-radius: 4px;
+}
+#order {
+  padding-left: 5px;
+  font-weight: bold;
+}
+#submit {
+  width: 50px;
+  font-weight: bold;
+  color: #000;
+  background: #fff;
+  -webkit-transition: color 0.1s linear, background 0.1s linear;
+          transition: color 0.1s linear, background 0.1s linear;
+}
+#submit:hover {
+  color: #fff;
+  background: #b0e11e;
+}
+/*3.小方框属性*/
+td[class*="block-"]::before,
+td[class*="block-"]::after {
+  content: '';
+  float: left;
+  display: block;
+}
+td[class*="block-"]::before {
+  top: 0;
+  left: 0;
+}
+td[class*="block-"]::after {
+  right: 0;
+  bottom: 0;
+}
+.block-top::before {
+  width: 100%;
+  height: 30%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background: #aa0;
+}
+.block-top::after {
+  width: 100%;
+  height: 70%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: #b0e11e;
+}
+.block-right::before {
+  width: 70%;
+  height: 100%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background: #b0e11e;
+}
+.block-right::after {
+  width: 30%;
+  height: 100%;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: #aa0;
+}
+.block-bottom::before {
+  width: 100%;
+  height: 70%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background: #b0e11e;
+}
+.block-bottom::after {
+  width: 100%;
+  height: 30%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: #aa0;
+}
+.block-left::before {
+  width: 30%;
+  height: 100%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background: #aa0;
+}
+.block-left::after {
+  width: 70%;
+  height: 100%;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: #b0e11e;
+}
+/*4.规则*/
+p {
+  float: left;
+  position: absolute;
+  top: 420px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  font-weight: bold;
+}
